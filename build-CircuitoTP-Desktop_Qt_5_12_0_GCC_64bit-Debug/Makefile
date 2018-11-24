@@ -227,6 +227,7 @@ DIST          = /home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/qt_config.prf \
 		/home/gustavo/Qt/5.12.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/spec_post.prf \
+		../CircuitoTP/.qmake.stash \
 		/home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/toolchain.prf \
 		/home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -431,6 +432,7 @@ Makefile: ../CircuitoTP/CircuitoTP.pro /home/gustavo/Qt/5.12.0/gcc_64/mkspecs/li
 		/home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/qt_config.prf \
 		/home/gustavo/Qt/5.12.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		/home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		/home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/toolchain.prf \
 		/home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -627,6 +629,7 @@ Makefile: ../CircuitoTP/CircuitoTP.pro /home/gustavo/Qt/5.12.0/gcc_64/mkspecs/li
 /home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/qt_config.prf:
 /home/gustavo/Qt/5.12.0/gcc_64/mkspecs/linux-g++/qmake.conf:
 /home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/exclusive_builds.prf:
 /home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/toolchain.prf:
 /home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/default_pre.prf:
@@ -1057,7 +1060,36 @@ mainwindow.o: ../CircuitoTP/mainwindow.cpp ../CircuitoTP/mainwindow.h \
 		/home/gustavo/Qt/5.12.0/gcc_64/include/QtGui/qtouchdevice.h \
 		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qtabwidget.h \
 		/home/gustavo/Qt/5.12.0/gcc_64/include/QtGui/qicon.h \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtCore/QVariant \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/QApplication \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qapplication.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtCore/qcoreapplication.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtCore/qeventloop.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qdesktopwidget.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtGui/qguiapplication.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtGui/qinputmethod.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/QFrame \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qframe.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/QGridLayout \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qgridlayout.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qlayout.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qlayoutitem.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qboxlayout.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/QHBoxLayout \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/QMenuBar \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qmenubar.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qmenu.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qaction.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qactiongroup.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/QPushButton \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qpushbutton.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qabstractbutton.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/QStatusBar \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qstatusbar.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/QToolBar \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qtoolbar.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../CircuitoTP/mainwindow.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
