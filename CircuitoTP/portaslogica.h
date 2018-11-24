@@ -1,12 +1,12 @@
-#ifndef PORTASLOGICA_H
-#define PORTASLOGICA_H
+#ifndef PortasLogica_H
+#define PortasLogica_H
 
-class PortasLogica{
+class PortaLogica{
     protected:
         int qtdEntradas;
 
-        PortasLogica* entrada1;
-        PortasLogica* entrada2;
+        PortaLogica* entrada1;
+        PortaLogica* entrada2;
 
     public:
         virtual bool Operacao(){
@@ -14,35 +14,35 @@ class PortasLogica{
         }
 };
 
-class E: public PortasLogica{
+class E: public PortaLogica{
     public:
         E();
 
         bool Operacao();
 };
 
-class Ou: public PortasLogica{
+class Ou: public PortaLogica{
     public:
         Ou();
 
         bool Operacao();
 };
 
-class OuExclusivo: public PortasLogica{
+class OuExclusivo: public PortaLogica{
     public:
         OuExclusivo();
 
         bool Operacao();
 };
 
-class Nao: public PortasLogica{
+class Nao: public PortaLogica{
     public:
         Nao();
 
         bool Operacao();
 };
 
-class Botao: public PortasLogica{
+class Botao: public PortaLogica{
     bool estado;
 
     public:
@@ -51,12 +51,10 @@ class Botao: public PortasLogica{
         bool Operacao();
 };
 
-class LED: public PortasLogica{
+class LED: public PortaLogica{
     public:
         LED();
 
         bool Operacao();
 };
-
-
 #endif

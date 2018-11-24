@@ -38,6 +38,7 @@ public:
     QPushButton *nao_botao;
     QPushButton *ou_botao;
     QPushButton *LED_botao;
+    QPushButton *fio_botao;
     QWidget *gridLayoutWidget_2;
     QGridLayout *gridLayout_2;
     QPushButton *pushButton_57;
@@ -127,7 +128,7 @@ public:
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         horizontalLayoutWidget = new QWidget(centralWidget);
         horizontalLayoutWidget->setObjectName(QString::fromUtf8("horizontalLayoutWidget"));
-        horizontalLayoutWidget->setGeometry(QRect(0, 0, 251, 591));
+        horizontalLayoutWidget->setGeometry(QRect(0, 0, 258, 591));
         horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
         horizontalLayout->setSpacing(6);
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
@@ -165,6 +166,11 @@ public:
         LED_botao->setObjectName(QString::fromUtf8("LED_botao"));
 
         gridLayout->addWidget(LED_botao, 2, 1, 1, 1);
+
+        fio_botao = new QPushButton(horizontalLayoutWidget);
+        fio_botao->setObjectName(QString::fromUtf8("fio_botao"));
+
+        gridLayout->addWidget(fio_botao, 3, 0, 1, 2);
 
 
         horizontalLayout->addLayout(gridLayout);
@@ -788,6 +794,7 @@ public:
         nao_botao->setText(QApplication::translate("MainWindow", "N\303\243o", nullptr));
         ou_botao->setText(QApplication::translate("MainWindow", "Ou", nullptr));
         LED_botao->setText(QApplication::translate("MainWindow", "LED", nullptr));
+        fio_botao->setText(QApplication::translate("MainWindow", "Fio", nullptr));
         pushButton_57->setText(QApplication::translate("MainWindow", "Vazio", nullptr));
         pushButton_19->setText(QApplication::translate("MainWindow", "Vazio", nullptr));
         pushButton_21->setText(QApplication::translate("MainWindow", "Vazio", nullptr));
