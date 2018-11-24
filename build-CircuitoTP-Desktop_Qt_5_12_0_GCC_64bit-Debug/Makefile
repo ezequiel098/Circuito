@@ -51,9 +51,11 @@ OBJECTS_DIR   = ./
 ####### Files
 
 SOURCES       = ../CircuitoTP/main.cpp \
-		../CircuitoTP/mainwindow.cpp moc_mainwindow.cpp
+		../CircuitoTP/mainwindow.cpp \
+		../CircuitoTP/portaslogica.cpp moc_mainwindow.cpp
 OBJECTS       = main.o \
 		mainwindow.o \
+		portaslogica.o \
 		moc_mainwindow.o
 DIST          = /home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/home/gustavo/Qt/5.12.0/gcc_64/mkspecs/common/unix.conf \
@@ -247,8 +249,10 @@ DIST          = /home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/spec_pre.prf \
 		/home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/exceptions.prf \
 		/home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/yacc.prf \
 		/home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/lex.prf \
-		../CircuitoTP/CircuitoTP.pro ../CircuitoTP/mainwindow.h ../CircuitoTP/main.cpp \
-		../CircuitoTP/mainwindow.cpp
+		../CircuitoTP/CircuitoTP.pro ../CircuitoTP/mainwindow.h \
+		../CircuitoTP/portaslogica.h ../CircuitoTP/main.cpp \
+		../CircuitoTP/mainwindow.cpp \
+		../CircuitoTP/portaslogica.cpp
 QMAKE_TARGET  = CircuitoTP
 DESTDIR       = 
 TARGET        = CircuitoTP
@@ -668,8 +672,8 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents /home/gustavo/Qt/5.12.0/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../CircuitoTP/mainwindow.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../CircuitoTP/main.cpp ../CircuitoTP/mainwindow.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../CircuitoTP/mainwindow.h ../CircuitoTP/portaslogica.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../CircuitoTP/main.cpp ../CircuitoTP/mainwindow.cpp ../CircuitoTP/portaslogica.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../CircuitoTP/mainwindow.ui $(DISTDIR)/
 
 
@@ -1062,6 +1066,9 @@ mainwindow.o: ../CircuitoTP/mainwindow.cpp ../CircuitoTP/mainwindow.h \
 		/home/gustavo/Qt/5.12.0/gcc_64/include/QtGui/qicon.h \
 		ui_mainwindow.h \
 		/home/gustavo/Qt/5.12.0/gcc_64/include/QtCore/QVariant \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/QAction \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qaction.h \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qactiongroup.h \
 		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/QApplication \
 		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qapplication.h \
 		/home/gustavo/Qt/5.12.0/gcc_64/include/QtCore/qcoreapplication.h \
@@ -1077,11 +1084,10 @@ mainwindow.o: ../CircuitoTP/mainwindow.cpp ../CircuitoTP/mainwindow.h \
 		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qlayoutitem.h \
 		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qboxlayout.h \
 		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/QHBoxLayout \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/QMenu \
+		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qmenu.h \
 		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/QMenuBar \
 		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qmenubar.h \
-		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qmenu.h \
-		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qaction.h \
-		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qactiongroup.h \
 		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/QPushButton \
 		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qpushbutton.h \
 		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qabstractbutton.h \
@@ -1091,6 +1097,9 @@ mainwindow.o: ../CircuitoTP/mainwindow.cpp ../CircuitoTP/mainwindow.h \
 		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/qtoolbar.h \
 		/home/gustavo/Qt/5.12.0/gcc_64/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../CircuitoTP/mainwindow.cpp
+
+portaslogica.o: ../CircuitoTP/portaslogica.cpp ../CircuitoTP/portaslogica.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o portaslogica.o ../CircuitoTP/portaslogica.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp

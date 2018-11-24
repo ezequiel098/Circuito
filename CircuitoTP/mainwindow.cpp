@@ -44,3 +44,24 @@ void MainWindow::on_botao_botao_clicked(){
 void MainWindow::on_LED_botao_clicked(){
     mudarEscolha(LED);
 }
+
+void MainWindow::on_pushButton_7_clicked(){
+    QIcon icone;
+    switch(verEscolha()){
+        case E:
+            icone = QIcon("../Imagens/E.png");
+        break;
+        case OU:
+            icone = QIcon("../Imagens/Ou.png");
+        break;
+        case OU_EXCLUSIVO:
+            icone = QIcon("../Imagens/OuExclusivo.png");
+        break;
+        case NAO:
+            icone = QIcon("../Imagens/Nao.png");
+        break;
+    }
+
+    ui->pushButton_7->setText("");
+    ui->pushButton_7->setIcon(icone);
+}

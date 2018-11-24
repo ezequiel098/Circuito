@@ -84,36 +84,1137 @@
     <layout class="QGridLayout" name="gridLayout_2">
      <item row="4" column="7">
       <widget class="QPushButton" name="pushButton_57">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
-        <string>PushButton</string>
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
        </property>
       </widget>
      </item>
      <item row="8" column="4">
       <widget class="QPushButton" name="pushButton_19">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
-        <string>PushButton</string>
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
        </property>
       </widget>
      </item>
      <item row="8" column="6">
       <widget class="QPushButton" name="pushButton_21">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
-        <string>PushButton</string>
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
        </property>
       </widget>
      </item>
      <item row="7" column="4">
       <widget class="QPushButton" name="pushButton_75">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
-        <string>PushButton</string>
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
        </property>
       </widget>
      </item>
      <item row="8" column="7">
       <widget class="QPushButton" name="pushButton_22">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="text">
-        <string>PushButton</string>
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="5">
+      <widget class="QPushButton" name="pushButton_69">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="3">
+      <widget class="QPushButton" name="pushButton_18">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="pushButton_8">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="4">
+      <widget class="QPushButton" name="pushButton_40">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="5">
+      <widget class="QPushButton" name="pushButton_48">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="7">
+      <widget class="QPushButton" name="pushButton_64">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="5">
+      <widget class="QPushButton" name="pushButton_62">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="2">
+      <widget class="QPushButton" name="pushButton_52">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="5">
+      <widget class="QPushButton" name="pushButton_76">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="5">
+      <widget class="QPushButton" name="pushButton_20">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="6">
+      <widget class="QPushButton" name="pushButton_70">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="pushButton_23">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3">
+      <widget class="QPushButton" name="pushButton_25">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <widget class="QPushButton" name="pushButton_28">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="pushButton_30">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QPushButton" name="pushButton_26">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <widget class="QPushButton" name="pushButton_24">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="7">
+      <widget class="QPushButton" name="pushButton_29">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QPushButton" name="pushButton_46">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QPushButton" name="pushButton_9">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QPushButton" name="pushButton_10">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QPushButton" name="pushButton_11">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QPushButton" name="pushButton_12">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QPushButton" name="pushButton_13">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="7">
+      <widget class="QPushButton" name="pushButton_71">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
+      <widget class="QPushButton" name="pushButton_14">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="0">
+      <widget class="QPushButton" name="pushButton_15">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="1">
+      <widget class="QPushButton" name="pushButton_16">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="8" column="2">
+      <widget class="QPushButton" name="pushButton_17">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="5">
+      <widget class="QPushButton" name="pushButton_41">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="2">
+      <widget class="QPushButton" name="pushButton_45">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="7">
+      <widget class="QPushButton" name="pushButton_43">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="pushButton_51">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QPushButton" name="pushButton_58">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="6">
+      <widget class="QPushButton" name="pushButton_63">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="6">
+      <widget class="QPushButton" name="pushButton_77">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QPushButton" name="pushButton_27">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="2">
+      <widget class="QPushButton" name="pushButton_31">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="pushButton_32">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QPushButton" name="pushButton_33">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="pushButton_38">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="QPushButton" name="pushButton_34">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="6">
+      <widget class="QPushButton" name="pushButton_35">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QPushButton" name="pushButton_39">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="6">
+      <widget class="QPushButton" name="pushButton_42">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="7">
+      <widget class="QPushButton" name="pushButton_36">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QPushButton" name="pushButton_37">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="5">
+      <widget class="QPushButton" name="pushButton_55">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="4">
+      <widget class="QPushButton" name="pushButton_47">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="pushButton_44">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="6">
+      <widget class="QPushButton" name="pushButton_49">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="7">
+      <widget class="QPushButton" name="pushButton_50">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="6">
+      <widget class="QPushButton" name="pushButton_56">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="QPushButton" name="pushButton_54">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QPushButton" name="pushButton_53">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QPushButton" name="pushButton_59">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="3">
+      <widget class="QPushButton" name="pushButton_60">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="4">
+      <widget class="QPushButton" name="pushButton_68">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QPushButton" name="pushButton_65">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="4">
+      <widget class="QPushButton" name="pushButton_61">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="2">
+      <widget class="QPushButton" name="pushButton_66">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <widget class="QPushButton" name="pushButton_67">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="3">
+      <widget class="QPushButton" name="pushButton_74">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="2">
+      <widget class="QPushButton" name="pushButton_73">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="1">
+      <widget class="QPushButton" name="pushButton_72">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="7">
+      <widget class="QPushButton" name="pushButton_78">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
        </property>
       </widget>
      </item>
@@ -123,473 +1224,89 @@
         <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="5">
-      <widget class="QPushButton" name="pushButton_69">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="3">
-      <widget class="QPushButton" name="pushButton_18">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <widget class="QPushButton" name="pushButton_8">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="4">
-      <widget class="QPushButton" name="pushButton_40">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="5">
-      <widget class="QPushButton" name="pushButton_48">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="7">
-      <widget class="QPushButton" name="pushButton_64">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="5">
-      <widget class="QPushButton" name="pushButton_62">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="2">
-      <widget class="QPushButton" name="pushButton_52">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="5">
-      <widget class="QPushButton" name="pushButton_76">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="5">
-      <widget class="QPushButton" name="pushButton_20">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="6">
-      <widget class="QPushButton" name="pushButton_70">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QPushButton" name="pushButton_23">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="3">
-      <widget class="QPushButton" name="pushButton_25">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="6">
-      <widget class="QPushButton" name="pushButton_28">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QPushButton" name="pushButton_30">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="4">
-      <widget class="QPushButton" name="pushButton_26">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="2">
-      <widget class="QPushButton" name="pushButton_24">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="7">
-      <widget class="QPushButton" name="pushButton_29">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="3">
-      <widget class="QPushButton" name="pushButton_46">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QPushButton" name="pushButton_9">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="0">
-      <widget class="QPushButton" name="pushButton_10">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="0">
-      <widget class="QPushButton" name="pushButton_11">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="0">
-      <widget class="QPushButton" name="pushButton_12">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="0">
-      <widget class="QPushButton" name="pushButton_13">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="7">
-      <widget class="QPushButton" name="pushButton_71">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="0">
-      <widget class="QPushButton" name="pushButton_14">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="0">
-      <widget class="QPushButton" name="pushButton_15">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="1">
-      <widget class="QPushButton" name="pushButton_16">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="8" column="2">
-      <widget class="QPushButton" name="pushButton_17">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="5">
-      <widget class="QPushButton" name="pushButton_41">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="2">
-      <widget class="QPushButton" name="pushButton_45">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="7">
-      <widget class="QPushButton" name="pushButton_43">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="1">
-      <widget class="QPushButton" name="pushButton_51">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="1">
-      <widget class="QPushButton" name="pushButton_58">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="6">
-      <widget class="QPushButton" name="pushButton_63">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="6">
-      <widget class="QPushButton" name="pushButton_77">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="5">
-      <widget class="QPushButton" name="pushButton_27">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="2">
-      <widget class="QPushButton" name="pushButton_31">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="3">
-      <widget class="QPushButton" name="pushButton_32">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="4">
-      <widget class="QPushButton" name="pushButton_33">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="2">
-      <widget class="QPushButton" name="pushButton_38">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="5">
-      <widget class="QPushButton" name="pushButton_34">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="6">
-      <widget class="QPushButton" name="pushButton_35">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="3">
-      <widget class="QPushButton" name="pushButton_39">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="6">
-      <widget class="QPushButton" name="pushButton_42">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="7">
-      <widget class="QPushButton" name="pushButton_36">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="QPushButton" name="pushButton_37">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="5">
-      <widget class="QPushButton" name="pushButton_55">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="4">
-      <widget class="QPushButton" name="pushButton_47">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="1">
-      <widget class="QPushButton" name="pushButton_44">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="6">
-      <widget class="QPushButton" name="pushButton_49">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="7">
-      <widget class="QPushButton" name="pushButton_50">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="6">
-      <widget class="QPushButton" name="pushButton_56">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="4">
-      <widget class="QPushButton" name="pushButton_54">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="3">
-      <widget class="QPushButton" name="pushButton_53">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="2">
-      <widget class="QPushButton" name="pushButton_59">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="3">
-      <widget class="QPushButton" name="pushButton_60">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="4">
-      <widget class="QPushButton" name="pushButton_68">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="1">
-      <widget class="QPushButton" name="pushButton_65">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="4">
-      <widget class="QPushButton" name="pushButton_61">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="2">
-      <widget class="QPushButton" name="pushButton_66">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="6" column="3">
-      <widget class="QPushButton" name="pushButton_67">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="3">
-      <widget class="QPushButton" name="pushButton_74">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="2">
-      <widget class="QPushButton" name="pushButton_73">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="1">
-      <widget class="QPushButton" name="pushButton_72">
-       <property name="text">
-        <string>PushButton</string>
-       </property>
-      </widget>
-     </item>
-     <item row="7" column="7">
-      <widget class="QPushButton" name="pushButton_78">
-       <property name="text">
-        <string>PushButton</string>
+        <string>Vazio</string>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>90</width>
+         <height>30</height>
+        </size>
        </property>
       </widget>
      </item>
     </layout>
+    <zorder>pushButton_7</zorder>
+    <zorder>pushButton_57</zorder>
+    <zorder>pushButton_19</zorder>
+    <zorder>pushButton_21</zorder>
+    <zorder>pushButton_75</zorder>
+    <zorder>pushButton_22</zorder>
+    <zorder>pushButton_69</zorder>
+    <zorder>pushButton_18</zorder>
+    <zorder>pushButton_8</zorder>
+    <zorder>pushButton_40</zorder>
+    <zorder>pushButton_48</zorder>
+    <zorder>pushButton_64</zorder>
+    <zorder>pushButton_62</zorder>
+    <zorder>pushButton_52</zorder>
+    <zorder>pushButton_76</zorder>
+    <zorder>pushButton_20</zorder>
+    <zorder>pushButton_70</zorder>
+    <zorder>pushButton_23</zorder>
+    <zorder>pushButton_25</zorder>
+    <zorder>pushButton_28</zorder>
+    <zorder>pushButton_30</zorder>
+    <zorder>pushButton_26</zorder>
+    <zorder>pushButton_24</zorder>
+    <zorder>pushButton_29</zorder>
+    <zorder>pushButton_46</zorder>
+    <zorder>pushButton_9</zorder>
+    <zorder>pushButton_10</zorder>
+    <zorder>pushButton_11</zorder>
+    <zorder>pushButton_12</zorder>
+    <zorder>pushButton_13</zorder>
+    <zorder>pushButton_71</zorder>
+    <zorder>pushButton_14</zorder>
+    <zorder>pushButton_15</zorder>
+    <zorder>pushButton_16</zorder>
+    <zorder>pushButton_17</zorder>
+    <zorder>pushButton_41</zorder>
+    <zorder>pushButton_45</zorder>
+    <zorder>pushButton_43</zorder>
+    <zorder>pushButton_51</zorder>
+    <zorder>pushButton_58</zorder>
+    <zorder>pushButton_63</zorder>
+    <zorder>pushButton_77</zorder>
+    <zorder>pushButton_27</zorder>
+    <zorder>pushButton_31</zorder>
+    <zorder>pushButton_32</zorder>
+    <zorder>pushButton_33</zorder>
+    <zorder>pushButton_38</zorder>
+    <zorder>pushButton_34</zorder>
+    <zorder>pushButton_35</zorder>
+    <zorder>pushButton_39</zorder>
+    <zorder>pushButton_42</zorder>
+    <zorder>pushButton_36</zorder>
+    <zorder>pushButton_37</zorder>
+    <zorder>pushButton_55</zorder>
+    <zorder>pushButton_47</zorder>
+    <zorder>pushButton_44</zorder>
+    <zorder>pushButton_49</zorder>
+    <zorder>pushButton_50</zorder>
+    <zorder>pushButton_56</zorder>
+    <zorder>pushButton_54</zorder>
+    <zorder>pushButton_53</zorder>
+    <zorder>pushButton_59</zorder>
+    <zorder>pushButton_60</zorder>
+    <zorder>pushButton_68</zorder>
+    <zorder>pushButton_65</zorder>
+    <zorder>pushButton_61</zorder>
+    <zorder>pushButton_66</zorder>
+    <zorder>pushButton_67</zorder>
+    <zorder>pushButton_74</zorder>
+    <zorder>pushButton_73</zorder>
+    <zorder>pushButton_72</zorder>
+    <zorder>pushButton_78</zorder>
    </widget>
    <widget class="Line" name="line">
     <property name="geometry">
@@ -614,6 +1331,12 @@
      <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuCircuitos_Logicos">
+    <property name="title">
+     <string>Circuitos Logicos</string>
+    </property>
+   </widget>
+   <addaction name="menuCircuitos_Logicos"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">

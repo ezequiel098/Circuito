@@ -33,6 +33,8 @@ private slots:
 
     void on_LED_botao_clicked();
 
+    void on_pushButton_7_clicked();
+
 private:
     Escolhas escolha;
 
