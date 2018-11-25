@@ -4,9 +4,14 @@
 #include <QMainWindow>
 #include <QPushButton>
 #include <map>
+#include <vector>
+#include <iostream>
+#include <QPainter>
+#include <QPicture>
+#include <QLabel>
 #include "portaslogica.h"
 
-enum Escolhas {E, OU, OU_EXCLUSIVO, NAO, BOTAO, LED, FIO, DEFAULT};
+enum Escolhas {E, OU, OU_EXCLUSIVO, NAO, BOTAO0, BOTAO1, LED, FIOE, FIOS, DEFAULT};
 
 namespace Ui {
 class MainWindow;
@@ -17,15 +22,21 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+    int contador;
+    PortaLogica* pLAux;
+
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
     Escolhas verEscolha();
     void mudarEscolha(Escolhas);
 
+    void adicionarPivo(QPushButton*);
+    void atualizarPivores();
+
     PortaLogica* verPortaLogica(QPushButton*);
     bool PortaLogicaJaCadastrada(QPushButton*);
-    void cadastrarPortaLogica(QPushButton*, PortaLogica);
+    void cadastrarPortaLogica(QPushButton*, PortaLogica*);
 
     void alterarEstadoBotoes(QPushButton*);
 
@@ -37,12 +48,13 @@ private slots:
     void on_ouExclusiv_Botao_clicked();
 
     void on_nao_botao_clicked();
-
-    void on_botao_botao_clicked();
+    void on_botao0_botao_clicked();
+    void on_botao1_botao_clicked();
 
     void on_LED_botao_clicked();
 
-    void on_fio_botao_clicked();
+    void on_fioS_botao_clicked();
+    void on_fioE_botao_clicked();
 
     void on_pushButton_7_clicked();
     void on_pushButton_8_clicked();
@@ -119,7 +131,9 @@ private slots:
 
 private:
     Escolhas escolha;
-    std::map <QPushButton*, PortaLogica> PortaLogicaDoBotao;
+
+    std::vector <QPushButton*> pivores;
+    std::map <QPushButton*, PortaLogica*> PortaLogicaDoBotao;
 
     Ui::MainWindow *ui;
 };

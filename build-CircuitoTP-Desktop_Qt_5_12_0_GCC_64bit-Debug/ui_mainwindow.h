@@ -12,7 +12,6 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
-#include <QtWidgets/QFrame>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QMainWindow>
@@ -21,6 +20,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QToolBar>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -32,13 +32,16 @@ public:
     QWidget *horizontalLayoutWidget;
     QHBoxLayout *horizontalLayout;
     QGridLayout *gridLayout;
-    QPushButton *ouExclusiv_Botao;
-    QPushButton *e_botao;
-    QPushButton *botao_botao;
+    QPushButton *fioS_botao;
     QPushButton *nao_botao;
     QPushButton *ou_botao;
     QPushButton *LED_botao;
-    QPushButton *fio_botao;
+    QVBoxLayout *verticalLayout;
+    QPushButton *botao1_botao;
+    QPushButton *botao0_botao;
+    QPushButton *ouExclusiv_Botao;
+    QPushButton *e_botao;
+    QPushButton *fioE_botao;
     QWidget *gridLayoutWidget_2;
     QGridLayout *gridLayout_2;
     QPushButton *pushButton_57;
@@ -113,7 +116,6 @@ public:
     QPushButton *pushButton_72;
     QPushButton *pushButton_78;
     QPushButton *pushButton_7;
-    QFrame *line;
     QMenuBar *menuBar;
     QMenu *menuCircuitos_Logicos;
     QToolBar *mainToolBar;
@@ -123,12 +125,12 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(1060, 629);
+        MainWindow->resize(1154, 641);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
         horizontalLayoutWidget = new QWidget(centralWidget);
         horizontalLayoutWidget->setObjectName(QString::fromUtf8("horizontalLayoutWidget"));
-        horizontalLayoutWidget->setGeometry(QRect(0, 0, 258, 591));
+        horizontalLayoutWidget->setGeometry(QRect(0, 0, 344, 591));
         horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
         horizontalLayout->setSpacing(6);
         horizontalLayout->setContentsMargins(11, 11, 11, 11);
@@ -137,6 +139,42 @@ public:
         gridLayout = new QGridLayout();
         gridLayout->setSpacing(6);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        fioS_botao = new QPushButton(horizontalLayoutWidget);
+        fioS_botao->setObjectName(QString::fromUtf8("fioS_botao"));
+
+        gridLayout->addWidget(fioS_botao, 3, 2, 1, 1);
+
+        nao_botao = new QPushButton(horizontalLayoutWidget);
+        nao_botao->setObjectName(QString::fromUtf8("nao_botao"));
+
+        gridLayout->addWidget(nao_botao, 1, 2, 1, 1);
+
+        ou_botao = new QPushButton(horizontalLayoutWidget);
+        ou_botao->setObjectName(QString::fromUtf8("ou_botao"));
+
+        gridLayout->addWidget(ou_botao, 0, 2, 1, 1);
+
+        LED_botao = new QPushButton(horizontalLayoutWidget);
+        LED_botao->setObjectName(QString::fromUtf8("LED_botao"));
+
+        gridLayout->addWidget(LED_botao, 2, 2, 1, 1);
+
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setSpacing(6);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        botao1_botao = new QPushButton(horizontalLayoutWidget);
+        botao1_botao->setObjectName(QString::fromUtf8("botao1_botao"));
+
+        verticalLayout->addWidget(botao1_botao);
+
+        botao0_botao = new QPushButton(horizontalLayoutWidget);
+        botao0_botao->setObjectName(QString::fromUtf8("botao0_botao"));
+
+        verticalLayout->addWidget(botao0_botao);
+
+
+        gridLayout->addLayout(verticalLayout, 2, 0, 1, 1);
+
         ouExclusiv_Botao = new QPushButton(horizontalLayoutWidget);
         ouExclusiv_Botao->setObjectName(QString::fromUtf8("ouExclusiv_Botao"));
 
@@ -147,37 +185,17 @@ public:
 
         gridLayout->addWidget(e_botao, 0, 0, 1, 1);
 
-        botao_botao = new QPushButton(horizontalLayoutWidget);
-        botao_botao->setObjectName(QString::fromUtf8("botao_botao"));
+        fioE_botao = new QPushButton(horizontalLayoutWidget);
+        fioE_botao->setObjectName(QString::fromUtf8("fioE_botao"));
 
-        gridLayout->addWidget(botao_botao, 2, 0, 1, 1);
-
-        nao_botao = new QPushButton(horizontalLayoutWidget);
-        nao_botao->setObjectName(QString::fromUtf8("nao_botao"));
-
-        gridLayout->addWidget(nao_botao, 1, 1, 1, 1);
-
-        ou_botao = new QPushButton(horizontalLayoutWidget);
-        ou_botao->setObjectName(QString::fromUtf8("ou_botao"));
-
-        gridLayout->addWidget(ou_botao, 0, 1, 1, 1);
-
-        LED_botao = new QPushButton(horizontalLayoutWidget);
-        LED_botao->setObjectName(QString::fromUtf8("LED_botao"));
-
-        gridLayout->addWidget(LED_botao, 2, 1, 1, 1);
-
-        fio_botao = new QPushButton(horizontalLayoutWidget);
-        fio_botao->setObjectName(QString::fromUtf8("fio_botao"));
-
-        gridLayout->addWidget(fio_botao, 3, 0, 1, 2);
+        gridLayout->addWidget(fioE_botao, 3, 0, 1, 1);
 
 
         horizontalLayout->addLayout(gridLayout);
 
         gridLayoutWidget_2 = new QWidget(centralWidget);
         gridLayoutWidget_2->setObjectName(QString::fromUtf8("gridLayoutWidget_2"));
-        gridLayoutWidget_2->setGeometry(QRect(260, 0, 801, 591));
+        gridLayoutWidget_2->setGeometry(QRect(350, 0, 801, 591));
         gridLayout_2 = new QGridLayout(gridLayoutWidget_2);
         gridLayout_2->setSpacing(6);
         gridLayout_2->setContentsMargins(11, 11, 11, 11);
@@ -759,15 +777,10 @@ public:
         pushButton_73->raise();
         pushButton_72->raise();
         pushButton_78->raise();
-        line = new QFrame(centralWidget);
-        line->setObjectName(QString::fromUtf8("line"));
-        line->setGeometry(QRect(246, 0, 20, 591));
-        line->setFrameShape(QFrame::VLine);
-        line->setFrameShadow(QFrame::Sunken);
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 1060, 22));
+        menuBar->setGeometry(QRect(0, 0, 1154, 22));
         menuCircuitos_Logicos = new QMenu(menuBar);
         menuCircuitos_Logicos->setObjectName(QString::fromUtf8("menuCircuitos_Logicos"));
         MainWindow->setMenuBar(menuBar);
@@ -788,13 +801,15 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
-        ouExclusiv_Botao->setText(QApplication::translate("MainWindow", "Ou Exclusivo", nullptr));
-        e_botao->setText(QApplication::translate("MainWindow", "E", nullptr));
-        botao_botao->setText(QApplication::translate("MainWindow", "Botao", nullptr));
+        fioS_botao->setText(QApplication::translate("MainWindow", "Fio de saida", nullptr));
         nao_botao->setText(QApplication::translate("MainWindow", "N\303\243o", nullptr));
         ou_botao->setText(QApplication::translate("MainWindow", "Ou", nullptr));
         LED_botao->setText(QApplication::translate("MainWindow", "LED", nullptr));
-        fio_botao->setText(QApplication::translate("MainWindow", "Fio", nullptr));
+        botao1_botao->setText(QApplication::translate("MainWindow", "Botao 1", nullptr));
+        botao0_botao->setText(QApplication::translate("MainWindow", "Botao 0", nullptr));
+        ouExclusiv_Botao->setText(QApplication::translate("MainWindow", "Ou Exclusivo", nullptr));
+        e_botao->setText(QApplication::translate("MainWindow", "E", nullptr));
+        fioE_botao->setText(QApplication::translate("MainWindow", "Fio de entrada", nullptr));
         pushButton_57->setText(QApplication::translate("MainWindow", "Vazio", nullptr));
         pushButton_19->setText(QApplication::translate("MainWindow", "Vazio", nullptr));
         pushButton_21->setText(QApplication::translate("MainWindow", "Vazio", nullptr));

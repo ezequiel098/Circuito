@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1060</width>
-    <height>629</height>
+    <width>1154</width>
+    <height>641</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,13 +19,59 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>258</width>
+      <width>344</width>
       <height>591</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout">
      <item>
       <layout class="QGridLayout" name="gridLayout">
+       <item row="3" column="2">
+        <widget class="QPushButton" name="fioS_botao">
+         <property name="text">
+          <string>Fio de saida</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="nao_botao">
+         <property name="text">
+          <string>Não</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="ou_botao">
+         <property name="text">
+          <string>Ou</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="LED_botao">
+         <property name="text">
+          <string>LED</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="botao1_botao">
+           <property name="text">
+            <string>Botao 1</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="botao0_botao">
+           <property name="text">
+            <string>Botao 0</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
        <item row="1" column="0">
         <widget class="QPushButton" name="ouExclusiv_Botao">
          <property name="text">
@@ -40,38 +86,10 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="0">
-        <widget class="QPushButton" name="botao_botao">
+       <item row="3" column="0">
+        <widget class="QPushButton" name="fioE_botao">
          <property name="text">
-          <string>Botao</string>
-         </property>
-        </widget>
-       </item>
-       <item row="1" column="1">
-        <widget class="QPushButton" name="nao_botao">
-         <property name="text">
-          <string>Não</string>
-         </property>
-        </widget>
-       </item>
-       <item row="0" column="1">
-        <widget class="QPushButton" name="ou_botao">
-         <property name="text">
-          <string>Ou</string>
-         </property>
-        </widget>
-       </item>
-       <item row="2" column="1">
-        <widget class="QPushButton" name="LED_botao">
-         <property name="text">
-          <string>LED</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="0" colspan="2">
-        <widget class="QPushButton" name="fio_botao">
-         <property name="text">
-          <string>Fio</string>
+          <string>Fio de entrada</string>
          </property>
         </widget>
        </item>
@@ -82,7 +100,7 @@
    <widget class="QWidget" name="gridLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>260</x>
+      <x>350</x>
       <y>0</y>
       <width>801</width>
       <height>591</height>
@@ -1315,26 +1333,13 @@
     <zorder>pushButton_72</zorder>
     <zorder>pushButton_78</zorder>
    </widget>
-   <widget class="Line" name="line">
-    <property name="geometry">
-     <rect>
-      <x>246</x>
-      <y>0</y>
-      <width>20</width>
-      <height>591</height>
-     </rect>
-    </property>
-    <property name="orientation">
-     <enum>Qt::Vertical</enum>
-    </property>
-   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1060</width>
+     <width>1154</width>
      <height>22</height>
     </rect>
    </property>

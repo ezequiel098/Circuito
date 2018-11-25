@@ -5,6 +5,8 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+    contador = 0;
+
     ui->setupUi(this);
 }
 
@@ -20,10 +22,27 @@ void MainWindow::mudarEscolha(Escolhas e){
     escolha = e;
 }
 
-PortaLogica* MainWindow::verPortaLogica(QPushButton* botao){
-    return &(PortaLogicaDoBotao[botao]);
+void MainWindow::adicionarPivo(QPushButton* botao){
+    pivores.push_back(botao);
 }
-void MainWindow::cadastrarPortaLogica(QPushButton* botao, PortaLogica pL){
+void MainWindow::atualizarPivores(){
+
+    for(unsigned long int i=0;i<pivores.size();i++){
+        pivores[i]->setText("");
+
+        if(verPortaLogica(pivores[i])->Operacao()){
+            pivores[i]->setIcon(QIcon("../Imagens/LedAceso.png"));
+        }
+        else{
+            pivores[i]->setIcon(QIcon("../Imagens/LedApagado.png"));
+        }
+    }
+}
+
+PortaLogica* MainWindow::verPortaLogica(QPushButton* botao){
+    return PortaLogicaDoBotao[botao];
+}
+void MainWindow::cadastrarPortaLogica(QPushButton* botao, PortaLogica* pL){
     PortaLogicaDoBotao[botao] = pL;
 }
 bool MainWindow::PortaLogicaJaCadastrada(QPushButton* botao){
@@ -33,37 +52,36 @@ bool MainWindow::PortaLogicaJaCadastrada(QPushButton* botao){
 void MainWindow::on_e_botao_clicked(){
     mudarEscolha(E);
 }
-
 void MainWindow::on_ou_botao_clicked(){
     mudarEscolha(OU);
 }
-
 void MainWindow::on_ouExclusiv_Botao_clicked(){
     mudarEscolha(OU_EXCLUSIVO);
 }
-
 void MainWindow::on_nao_botao_clicked(){
     mudarEscolha(NAO);
 }
-
-void MainWindow::on_botao_botao_clicked(){
-    mudarEscolha(BOTAO);
+void MainWindow::on_botao0_botao_clicked(){
+    mudarEscolha(BOTAO0);
 }
-
+void MainWindow::on_botao1_botao_clicked(){
+    mudarEscolha(BOTAO1);
+}
 void MainWindow::on_LED_botao_clicked(){
     mudarEscolha(LED);
 }
-
-void MainWindow::on_fio_botao_clicked(){
-    mudarEscolha(FIO);
+void MainWindow::on_fioE_botao_clicked(){
+    mudarEscolha(FIOE);
+}
+void MainWindow::on_fioS_botao_clicked(){
+    mudarEscolha(FIOS);
 }
 
 void MainWindow::alterarEstadoBotoes(QPushButton* botao){
     switch(verEscolha()){
         case E:
             if(!PortaLogicaJaCadastrada(botao)){
-                class::E e;
-                cadastrarPortaLogica(botao, e);
+                cadastrarPortaLogica(botao, new class::E());
 
                 botao->setText("");
                 botao->setIcon(QIcon("../Imagens/E.png"));
@@ -71,8 +89,7 @@ void MainWindow::alterarEstadoBotoes(QPushButton* botao){
         break;
         case OU:
             if(!PortaLogicaJaCadastrada(botao)){
-                Ou ou;
-                cadastrarPortaLogica(botao, ou);
+                cadastrarPortaLogica(botao, new Ou());
 
                 botao->setText("");
                 botao->setIcon(QIcon("../Imagens/Ou.png"));
@@ -80,8 +97,7 @@ void MainWindow::alterarEstadoBotoes(QPushButton* botao){
         break;
         case OU_EXCLUSIVO:
             if(!PortaLogicaJaCadastrada(botao)){
-                OuExclusivo Xou;
-                cadastrarPortaLogica(botao, Xou);
+                cadastrarPortaLogica(botao, new OuExclusivo());
 
                 botao->setText("");
                 botao->setIcon(QIcon("../Imagens/OuExclusivo.png"));
@@ -89,15 +105,54 @@ void MainWindow::alterarEstadoBotoes(QPushButton* botao){
         break;
         case NAO:
             if(!PortaLogicaJaCadastrada(botao)){
-                Nao nao;
-                cadastrarPortaLogica(botao, nao);
+                cadastrarPortaLogica(botao, new Nao());
 
                 botao->setText("");
                 botao->setIcon(QIcon("../Imagens/Nao.png"));
             }
         break;
-        case FIO:
+        case LED:
+            if(!PortaLogicaJaCadastrada(botao)){
+                cadastrarPortaLogica(botao, new class::LED());
+                adicionarPivo(botao);
 
+                botao->setText("");
+                botao->setIcon(QIcon("../Imagens/LedInicial.png"));
+            }
+        break;
+        case BOTAO0:
+            if(!PortaLogicaJaCadastrada(botao)){
+                cadastrarPortaLogica(botao, new Botao(false));
+
+                botao->setText("");
+                botao->setIcon(QIcon("../Imagens/Botao0.png"));
+            }
+        break;
+        case BOTAO1:
+            if(!PortaLogicaJaCadastrada(botao)){
+                cadastrarPortaLogica(botao, new Botao(true));
+
+                botao->setText("");
+                botao->setIcon(QIcon("../Imagens/Botao1.png"));
+            }
+        break;
+        case FIOE:
+            if(PortaLogicaJaCadastrada(botao)){
+                verPortaLogica(botao)->adicionarEntrada(pLAux);
+
+                atualizarPivores();
+
+
+            }
+
+            mudarEscolha(DEFAULT);
+        break;
+        case FIOS:
+            if(PortaLogicaJaCadastrada(botao)){
+                pLAux = verPortaLogica(botao);
+            }
+
+            mudarEscolha(FIOE);
         break;
     }
 }

@@ -1,17 +1,25 @@
 #ifndef PortasLogica_H
 #define PortasLogica_H
+#include <map>
+#include <QPushButton>
+#include <iostream>
 
 class PortaLogica{
     protected:
-        int qtdEntradas;
+        int qtdEntradas, contador;
 
         PortaLogica* entrada1;
         PortaLogica* entrada2;
 
     public:
+        PortaLogica(){
+            contador = 0;
+        }
+
         virtual bool Operacao(){
             return 0;
         }
+        virtual void adicionarEntrada(PortaLogica* pl){}
 };
 
 class E: public PortaLogica{
@@ -19,6 +27,7 @@ class E: public PortaLogica{
         E();
 
         bool Operacao();
+        void adicionarEntrada(PortaLogica*);
 };
 
 class Ou: public PortaLogica{
@@ -26,6 +35,7 @@ class Ou: public PortaLogica{
         Ou();
 
         bool Operacao();
+        void adicionarEntrada(PortaLogica*);
 };
 
 class OuExclusivo: public PortaLogica{
@@ -33,6 +43,7 @@ class OuExclusivo: public PortaLogica{
         OuExclusivo();
 
         bool Operacao();
+        void adicionarEntrada(PortaLogica*);
 };
 
 class Nao: public PortaLogica{
@@ -40,6 +51,7 @@ class Nao: public PortaLogica{
         Nao();
 
         bool Operacao();
+        void adicionarEntrada(PortaLogica*);
 };
 
 class Botao: public PortaLogica{
@@ -47,6 +59,7 @@ class Botao: public PortaLogica{
 
     public:
         Botao();
+        Botao(bool);
 
         bool Operacao();
 };
@@ -56,5 +69,6 @@ class LED: public PortaLogica{
         LED();
 
         bool Operacao();
+        void adicionarEntrada(PortaLogica*);
 };
 #endif
