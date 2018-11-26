@@ -9,6 +9,7 @@
 #include <QPainter>
 #include <QPicture>
 #include <QLabel>
+#include <utility>
 #include "portaslogica.h"
 
 enum Escolhas {E, OU, OU_EXCLUSIVO, NAO, BOTAO0, BOTAO1, LED, FIOE, FIOS, DEFAULT};
@@ -24,6 +25,7 @@ class MainWindow : public QMainWindow
 public:
     int contador;
     PortaLogica* pLAux;
+    QPoint pAuxE, pAuxS;
 
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
@@ -33,6 +35,8 @@ public:
 
     void adicionarPivo(QPushButton*);
     void atualizarPivores();
+
+    void adicionarPonto(QPoint, QPoint);
 
     PortaLogica* verPortaLogica(QPushButton*);
     bool PortaLogicaJaCadastrada(QPushButton*);
@@ -133,9 +137,31 @@ private:
     Escolhas escolha;
 
     std::vector <QPushButton*> pivores;
+    std::vector <std::pair <QPoint, QPoint> > pontos;
     std::map <QPushButton*, PortaLogica*> PortaLogicaDoBotao;
 
     Ui::MainWindow *ui;
+
+protected:
+    void paintEvent(QPaintEvent*) {
+        QPainter painter(this);
+
+        int width = size().width() - 3;
+        int height = size().height() - 5;
+
+        painter.fillRect(0, 0, width, height, QColor(255,219,88));
+
+        if(verEscolha()==FIOE){
+
+            //painter.fillRect(wAuxS, hAuxS, wAuxE, hAuxE, QColor(0,0,255));
+
+            for(unsigned long int i=0;i<pontos.size();i++)
+                painter.drawLine(pontos[i].first, pontos[i].second);
+        }
+    }
+
+    void desenha();
+
 };
 
 #endif // MAINWINDOW_H

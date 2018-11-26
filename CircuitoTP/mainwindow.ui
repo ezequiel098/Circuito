@@ -1260,78 +1260,78 @@
       </widget>
      </item>
     </layout>
-    <zorder>pushButton_7</zorder>
-    <zorder>pushButton_57</zorder>
-    <zorder>pushButton_19</zorder>
-    <zorder>pushButton_21</zorder>
+    <zorder>pushButton_58</zorder>
+    <zorder>pushButton_15</zorder>
+    <zorder>pushButton_50</zorder>
+    <zorder>pushButton_77</zorder>
+    <zorder>pushButton_59</zorder>
+    <zorder>pushButton_13</zorder>
+    <zorder>pushButton_72</zorder>
+    <zorder>pushButton_68</zorder>
+    <zorder>pushButton_46</zorder>
+    <zorder>pushButton_76</zorder>
+    <zorder>pushButton_49</zorder>
+    <zorder>pushButton_27</zorder>
+    <zorder>pushButton_30</zorder>
+    <zorder>pushButton_51</zorder>
     <zorder>pushButton_75</zorder>
-    <zorder>pushButton_22</zorder>
+    <zorder>pushButton_28</zorder>
+    <zorder>pushButton_35</zorder>
+    <zorder>pushButton_31</zorder>
+    <zorder>pushButton_41</zorder>
+    <zorder>pushButton_23</zorder>
+    <zorder>pushButton_47</zorder>
+    <zorder>pushButton_65</zorder>
+    <zorder>pushButton_9</zorder>
+    <zorder>pushButton_57</zorder>
     <zorder>pushButton_69</zorder>
-    <zorder>pushButton_18</zorder>
     <zorder>pushButton_8</zorder>
     <zorder>pushButton_40</zorder>
     <zorder>pushButton_48</zorder>
-    <zorder>pushButton_64</zorder>
-    <zorder>pushButton_62</zorder>
-    <zorder>pushButton_52</zorder>
-    <zorder>pushButton_76</zorder>
-    <zorder>pushButton_20</zorder>
+    <zorder>pushButton_22</zorder>
+    <zorder>pushButton_19</zorder>
     <zorder>pushButton_70</zorder>
-    <zorder>pushButton_23</zorder>
-    <zorder>pushButton_25</zorder>
-    <zorder>pushButton_28</zorder>
-    <zorder>pushButton_30</zorder>
-    <zorder>pushButton_26</zorder>
-    <zorder>pushButton_24</zorder>
     <zorder>pushButton_29</zorder>
-    <zorder>pushButton_46</zorder>
-    <zorder>pushButton_9</zorder>
-    <zorder>pushButton_10</zorder>
-    <zorder>pushButton_11</zorder>
-    <zorder>pushButton_12</zorder>
-    <zorder>pushButton_13</zorder>
-    <zorder>pushButton_71</zorder>
-    <zorder>pushButton_14</zorder>
-    <zorder>pushButton_15</zorder>
-    <zorder>pushButton_16</zorder>
-    <zorder>pushButton_17</zorder>
-    <zorder>pushButton_41</zorder>
-    <zorder>pushButton_45</zorder>
-    <zorder>pushButton_43</zorder>
-    <zorder>pushButton_51</zorder>
-    <zorder>pushButton_58</zorder>
-    <zorder>pushButton_63</zorder>
-    <zorder>pushButton_77</zorder>
-    <zorder>pushButton_27</zorder>
-    <zorder>pushButton_31</zorder>
     <zorder>pushButton_32</zorder>
-    <zorder>pushButton_33</zorder>
-    <zorder>pushButton_38</zorder>
-    <zorder>pushButton_34</zorder>
-    <zorder>pushButton_35</zorder>
     <zorder>pushButton_39</zorder>
-    <zorder>pushButton_42</zorder>
-    <zorder>pushButton_36</zorder>
-    <zorder>pushButton_37</zorder>
-    <zorder>pushButton_55</zorder>
-    <zorder>pushButton_47</zorder>
-    <zorder>pushButton_44</zorder>
-    <zorder>pushButton_49</zorder>
-    <zorder>pushButton_50</zorder>
+    <zorder>pushButton_10</zorder>
+    <zorder>pushButton_67</zorder>
+    <zorder>pushButton_14</zorder>
     <zorder>pushButton_56</zorder>
+    <zorder>pushButton_43</zorder>
+    <zorder>pushButton_63</zorder>
+    <zorder>pushButton_24</zorder>
+    <zorder>pushButton_11</zorder>
+    <zorder>pushButton_73</zorder>
     <zorder>pushButton_54</zorder>
     <zorder>pushButton_53</zorder>
-    <zorder>pushButton_59</zorder>
-    <zorder>pushButton_60</zorder>
-    <zorder>pushButton_68</zorder>
-    <zorder>pushButton_65</zorder>
-    <zorder>pushButton_61</zorder>
+    <zorder>pushButton_18</zorder>
     <zorder>pushButton_66</zorder>
-    <zorder>pushButton_67</zorder>
-    <zorder>pushButton_74</zorder>
-    <zorder>pushButton_73</zorder>
-    <zorder>pushButton_72</zorder>
+    <zorder>pushButton_17</zorder>
+    <zorder>pushButton_64</zorder>
+    <zorder>pushButton_42</zorder>
+    <zorder>pushButton_25</zorder>
+    <zorder>pushButton_55</zorder>
+    <zorder>pushButton_16</zorder>
+    <zorder>pushButton_37</zorder>
+    <zorder>pushButton_36</zorder>
+    <zorder>pushButton_71</zorder>
+    <zorder>pushButton_33</zorder>
+    <zorder>pushButton_7</zorder>
+    <zorder>pushButton_20</zorder>
+    <zorder>pushButton_45</zorder>
+    <zorder>pushButton_52</zorder>
+    <zorder>pushButton_61</zorder>
+    <zorder>pushButton_44</zorder>
+    <zorder>pushButton_60</zorder>
+    <zorder>pushButton_26</zorder>
+    <zorder>pushButton_38</zorder>
     <zorder>pushButton_78</zorder>
+    <zorder>pushButton_12</zorder>
+    <zorder>pushButton_62</zorder>
+    <zorder>pushButton_21</zorder>
+    <zorder>pushButton_34</zorder>
+    <zorder>pushButton_74</zorder>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">

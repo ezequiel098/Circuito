@@ -39,6 +39,10 @@ void MainWindow::atualizarPivores(){
     }
 }
 
+void MainWindow::adicionarPonto(QPoint p1, QPoint p2){
+    pontos.push_back(std::make_pair(p1, p2));
+}
+
 PortaLogica* MainWindow::verPortaLogica(QPushButton* botao){
     return PortaLogicaDoBotao[botao];
 }
@@ -77,7 +81,13 @@ void MainWindow::on_fioS_botao_clicked(){
     mudarEscolha(FIOS);
 }
 
+void MainWindow::desenha()
+{
+    this->update();
+}
+
 void MainWindow::alterarEstadoBotoes(QPushButton* botao){
+
     switch(verEscolha()){
         case E:
             if(!PortaLogicaJaCadastrada(botao)){
@@ -142,14 +152,23 @@ void MainWindow::alterarEstadoBotoes(QPushButton* botao){
 
                 atualizarPivores();
 
+                pAuxE = botao->geometry().center();
 
+                pAuxE.setX(pAuxE.x()+350);
+                pAuxE.setY(pAuxE.y()+50);
+
+                adicionarPonto(pAuxS, pAuxE);
+                desenha();
             }
-
-            mudarEscolha(DEFAULT);
         break;
         case FIOS:
             if(PortaLogicaJaCadastrada(botao)){
                 pLAux = verPortaLogica(botao);
+
+                pAuxS = botao->geometry().center();
+
+                pAuxS.setX(pAuxS.x()+350);
+                pAuxS.setY(pAuxS.y()+50);
             }
 
             mudarEscolha(FIOE);
