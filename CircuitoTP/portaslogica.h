@@ -6,6 +6,7 @@
 
 class PortaLogica{
     protected:
+        int estado;
         int qtdEntradas, contador;
 
         PortaLogica* entrada1;
@@ -13,6 +14,7 @@ class PortaLogica{
 
     public:
         PortaLogica(){
+            estado = 2;
             contador = 0;
 
             entrada1 = NULL;
@@ -27,7 +29,12 @@ class PortaLogica{
             return entrada1->entradaValida() && entrada2->entradaValida();
         }
         virtual void adicionarEntrada(PortaLogica* pl){}
-
+        virtual void mudarEstado(){
+            estado = !estado;
+        }
+        virtual int verEstado(){
+            return estado;
+        }
 };
 
 class E: public PortaLogica{
@@ -68,8 +75,6 @@ class Nao: public PortaLogica{
 };
 
 class Botao: public PortaLogica{
-    bool estado;
-
     public:
         Botao();
         Botao(bool);

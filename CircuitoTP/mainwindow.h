@@ -12,10 +12,11 @@
 #include <utility>
 #include "portaslogica.h"
 #include <exception>
+#include <QBitmap>
 
 using namespace std;
 
-enum Escolhas {E, OU, OU_EXCLUSIVO, NAO, BOTAO0, BOTAO1, LED, FIOE, FIOS, DEFAULT};
+enum Escolhas {E, OU, OU_EXCLUSIVO, NAO, BOTAO0, BOTAO1, LED, FIOE, FIOS, BOTAOM, DEFAULT};
 
 namespace Ui {
 class MainWindow;
@@ -135,6 +136,8 @@ private slots:
     void on_pushButton_77_clicked();
     void on_pushButton_78_clicked();
 
+    void on_botaoMudar_botao_clicked();
+
 private:
     Escolhas escolha;
 
@@ -153,7 +156,7 @@ protected:
 
         painter.fillRect(0, 0, width, height, QColor(7, 13, 127));
 
-        if(verEscolha()==FIOE){
+
 
             //painter.fillRect(wAuxS, hAuxS, wAuxE, hAuxE, QColor(0,0,255));
 
@@ -161,7 +164,7 @@ protected:
 
             for(unsigned long int i=0;i<pontos.size();i++)
                 painter.drawLine(pontos[i].first, pontos[i].second);
-        }
+
     }
 
     void desenha();

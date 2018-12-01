@@ -6,19 +6,19 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1000</width>
+    <width>1050</width>
     <height>700</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>1000</width>
+    <width>1050</width>
     <height>700</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>1000</width>
+    <width>1050</width>
     <height>700</height>
    </size>
   </property>
@@ -33,8 +33,8 @@
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>20</y>
-      <width>266</width>
+      <y>-20</y>
+      <width>301</width>
       <height>589</height>
      </rect>
     </property>
@@ -482,306 +482,6 @@ border-color: rgb(255, 255, 0);</string>
         </size>
        </property>
       </widget>
-     </item>
-     <item row="8" column="0">
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QPushButton" name="botao1_botao">
-         <property name="palette">
-          <palette>
-           <active>
-            <colorrole role="Button">
-             <brush brushstyle="SolidPattern">
-              <color alpha="0">
-               <red>255</red>
-               <green>255</green>
-               <blue>255</blue>
-              </color>
-             </brush>
-            </colorrole>
-            <colorrole role="ButtonText">
-             <brush brushstyle="SolidPattern">
-              <color alpha="255">
-               <red>255</red>
-               <green>255</green>
-               <blue>0</blue>
-              </color>
-             </brush>
-            </colorrole>
-            <colorrole role="Base">
-             <brush brushstyle="SolidPattern">
-              <color alpha="0">
-               <red>255</red>
-               <green>255</green>
-               <blue>255</blue>
-              </color>
-             </brush>
-            </colorrole>
-            <colorrole role="Window">
-             <brush brushstyle="SolidPattern">
-              <color alpha="0">
-               <red>255</red>
-               <green>255</green>
-               <blue>255</blue>
-              </color>
-             </brush>
-            </colorrole>
-           </active>
-           <inactive>
-            <colorrole role="Button">
-             <brush brushstyle="SolidPattern">
-              <color alpha="0">
-               <red>255</red>
-               <green>255</green>
-               <blue>255</blue>
-              </color>
-             </brush>
-            </colorrole>
-            <colorrole role="ButtonText">
-             <brush brushstyle="SolidPattern">
-              <color alpha="255">
-               <red>255</red>
-               <green>255</green>
-               <blue>0</blue>
-              </color>
-             </brush>
-            </colorrole>
-            <colorrole role="Base">
-             <brush brushstyle="SolidPattern">
-              <color alpha="0">
-               <red>255</red>
-               <green>255</green>
-               <blue>255</blue>
-              </color>
-             </brush>
-            </colorrole>
-            <colorrole role="Window">
-             <brush brushstyle="SolidPattern">
-              <color alpha="0">
-               <red>255</red>
-               <green>255</green>
-               <blue>255</blue>
-              </color>
-             </brush>
-            </colorrole>
-           </inactive>
-           <disabled>
-            <colorrole role="Button">
-             <brush brushstyle="SolidPattern">
-              <color alpha="0">
-               <red>255</red>
-               <green>255</green>
-               <blue>255</blue>
-              </color>
-             </brush>
-            </colorrole>
-            <colorrole role="ButtonText">
-             <brush brushstyle="SolidPattern">
-              <color alpha="255">
-               <red>120</red>
-               <green>120</green>
-               <blue>120</blue>
-              </color>
-             </brush>
-            </colorrole>
-            <colorrole role="Base">
-             <brush brushstyle="SolidPattern">
-              <color alpha="0">
-               <red>255</red>
-               <green>255</green>
-               <blue>255</blue>
-              </color>
-             </brush>
-            </colorrole>
-            <colorrole role="Window">
-             <brush brushstyle="SolidPattern">
-              <color alpha="0">
-               <red>255</red>
-               <green>255</green>
-               <blue>255</blue>
-              </color>
-             </brush>
-            </colorrole>
-           </disabled>
-          </palette>
-         </property>
-         <property name="font">
-          <font>
-           <family>Penguin</family>
-           <pointsize>12</pointsize>
-           <weight>75</weight>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="cursor">
-          <cursorShape>PointingHandCursor</cursorShape>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgba(255, 255, 255, 0);
-border-style:dotted;
-border-width: 0.5px;
-border-color: rgb(255, 255, 0);</string>
-         </property>
-         <property name="text">
-          <string>Entrada 1</string>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>90</width>
-           <height>30</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="botao0_botao">
-         <property name="palette">
-          <palette>
-           <active>
-            <colorrole role="Button">
-             <brush brushstyle="SolidPattern">
-              <color alpha="0">
-               <red>255</red>
-               <green>255</green>
-               <blue>255</blue>
-              </color>
-             </brush>
-            </colorrole>
-            <colorrole role="ButtonText">
-             <brush brushstyle="SolidPattern">
-              <color alpha="255">
-               <red>255</red>
-               <green>255</green>
-               <blue>0</blue>
-              </color>
-             </brush>
-            </colorrole>
-            <colorrole role="Base">
-             <brush brushstyle="SolidPattern">
-              <color alpha="0">
-               <red>255</red>
-               <green>255</green>
-               <blue>255</blue>
-              </color>
-             </brush>
-            </colorrole>
-            <colorrole role="Window">
-             <brush brushstyle="SolidPattern">
-              <color alpha="0">
-               <red>255</red>
-               <green>255</green>
-               <blue>255</blue>
-              </color>
-             </brush>
-            </colorrole>
-           </active>
-           <inactive>
-            <colorrole role="Button">
-             <brush brushstyle="SolidPattern">
-              <color alpha="0">
-               <red>255</red>
-               <green>255</green>
-               <blue>255</blue>
-              </color>
-             </brush>
-            </colorrole>
-            <colorrole role="ButtonText">
-             <brush brushstyle="SolidPattern">
-              <color alpha="255">
-               <red>255</red>
-               <green>255</green>
-               <blue>0</blue>
-              </color>
-             </brush>
-            </colorrole>
-            <colorrole role="Base">
-             <brush brushstyle="SolidPattern">
-              <color alpha="0">
-               <red>255</red>
-               <green>255</green>
-               <blue>255</blue>
-              </color>
-             </brush>
-            </colorrole>
-            <colorrole role="Window">
-             <brush brushstyle="SolidPattern">
-              <color alpha="0">
-               <red>255</red>
-               <green>255</green>
-               <blue>255</blue>
-              </color>
-             </brush>
-            </colorrole>
-           </inactive>
-           <disabled>
-            <colorrole role="Button">
-             <brush brushstyle="SolidPattern">
-              <color alpha="0">
-               <red>255</red>
-               <green>255</green>
-               <blue>255</blue>
-              </color>
-             </brush>
-            </colorrole>
-            <colorrole role="ButtonText">
-             <brush brushstyle="SolidPattern">
-              <color alpha="255">
-               <red>120</red>
-               <green>120</green>
-               <blue>120</blue>
-              </color>
-             </brush>
-            </colorrole>
-            <colorrole role="Base">
-             <brush brushstyle="SolidPattern">
-              <color alpha="0">
-               <red>255</red>
-               <green>255</green>
-               <blue>255</blue>
-              </color>
-             </brush>
-            </colorrole>
-            <colorrole role="Window">
-             <brush brushstyle="SolidPattern">
-              <color alpha="0">
-               <red>255</red>
-               <green>255</green>
-               <blue>255</blue>
-              </color>
-             </brush>
-            </colorrole>
-           </disabled>
-          </palette>
-         </property>
-         <property name="font">
-          <font>
-           <family>Penguin</family>
-           <pointsize>12</pointsize>
-           <weight>75</weight>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="cursor">
-          <cursorShape>PointingHandCursor</cursorShape>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgba(255, 255, 255, 0);
-border-style:dotted;
-border-width: 0.5px;
-border-color: rgb(255, 255, 0);</string>
-         </property>
-         <property name="text">
-          <string>Entrada 0</string>
-         </property>
-         <property name="iconSize">
-          <size>
-           <width>90</width>
-           <height>30</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-      </layout>
      </item>
      <item row="0" column="0">
       <widget class="QLabel" name="label_2">
@@ -1904,7 +1604,8 @@ border-width: 0.5px;
 border-color: rgb(255, 255, 0);</string>
        </property>
        <property name="text">
-        <string>Fio</string>
+        <string>Fio
+Saida P/ Entrada</string>
        </property>
        <property name="iconSize">
         <size>
@@ -1914,12 +1615,460 @@ border-color: rgb(255, 255, 0);</string>
        </property>
       </widget>
      </item>
+     <item row="8" column="0" colspan="2">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="botao1_botao">
+         <property name="palette">
+          <palette>
+           <active>
+            <colorrole role="Button">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ButtonText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Window">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </active>
+           <inactive>
+            <colorrole role="Button">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ButtonText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Window">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </inactive>
+           <disabled>
+            <colorrole role="Button">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ButtonText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>120</red>
+               <green>120</green>
+               <blue>120</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Window">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </disabled>
+          </palette>
+         </property>
+         <property name="font">
+          <font>
+           <family>Penguin</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);
+border-style:dotted;
+border-width: 0.5px;
+border-color: rgb(255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>NIvel lógico 1</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>90</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="botao0_botao">
+         <property name="palette">
+          <palette>
+           <active>
+            <colorrole role="Button">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ButtonText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Window">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </active>
+           <inactive>
+            <colorrole role="Button">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ButtonText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Window">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </inactive>
+           <disabled>
+            <colorrole role="Button">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ButtonText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>120</red>
+               <green>120</green>
+               <blue>120</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Window">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </disabled>
+          </palette>
+         </property>
+         <property name="font">
+          <font>
+           <family>Penguin</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);
+border-style:dotted;
+border-width: 0.5px;
+border-color: rgb(255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>NIvel lógico 0</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>90</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="botaoMudar_botao">
+         <property name="palette">
+          <palette>
+           <active>
+            <colorrole role="Button">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ButtonText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Window">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </active>
+           <inactive>
+            <colorrole role="Button">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ButtonText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>255</red>
+               <green>255</green>
+               <blue>0</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Window">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </inactive>
+           <disabled>
+            <colorrole role="Button">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="ButtonText">
+             <brush brushstyle="SolidPattern">
+              <color alpha="255">
+               <red>120</red>
+               <green>120</green>
+               <blue>120</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Base">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+            <colorrole role="Window">
+             <brush brushstyle="SolidPattern">
+              <color alpha="0">
+               <red>255</red>
+               <green>255</green>
+               <blue>255</blue>
+              </color>
+             </brush>
+            </colorrole>
+           </disabled>
+          </palette>
+         </property>
+         <property name="font">
+          <font>
+           <family>Penguin</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);
+border-style:dotted;
+border-width: 0.5px;
+border-color: rgb(255, 255, 0);</string>
+         </property>
+         <property name="text">
+          <string>Mudar Nivel Lógico</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>90</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
     </layout>
    </widget>
    <widget class="QWidget" name="gridLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>300</x>
+      <x>360</x>
       <y>20</y>
       <width>668</width>
       <height>589</height>
@@ -2060,9 +2209,6 @@ border-color: rgb(255, 255, 0);</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -2217,9 +2363,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -2372,9 +2515,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -2529,9 +2669,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -2684,9 +2821,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -2841,9 +2975,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -2996,9 +3127,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -3153,9 +3281,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -3308,9 +3433,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -3465,9 +3587,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -3620,9 +3739,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -3777,9 +3893,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -3932,9 +4045,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -4089,9 +4199,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -4244,9 +4351,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -4401,9 +4505,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -4556,9 +4657,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -4713,9 +4811,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -4868,9 +4963,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -5025,9 +5117,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -5180,9 +5269,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -5337,9 +5423,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -5492,9 +5575,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -5649,9 +5729,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -5804,9 +5881,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -5961,9 +6035,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -6116,9 +6187,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -6273,9 +6341,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -6428,9 +6493,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -6585,9 +6647,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -6740,9 +6799,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -6897,9 +6953,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -7052,9 +7105,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -7209,9 +7259,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -7364,9 +7411,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -7521,9 +7565,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -7676,9 +7717,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -7833,9 +7871,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -7988,9 +8023,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -8145,9 +8177,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -8300,9 +8329,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -8457,9 +8483,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -8612,9 +8635,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -8769,9 +8789,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -8924,9 +8941,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -9081,9 +9095,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -9236,9 +9247,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -9393,9 +9401,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -9548,9 +9553,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -9705,9 +9707,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -9860,9 +9859,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -10017,9 +10013,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -10172,9 +10165,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -10329,9 +10319,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -10484,9 +10471,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -10641,9 +10625,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -10796,9 +10777,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -10953,9 +10931,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -11108,9 +11083,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -11265,9 +11237,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -11420,9 +11389,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -11577,9 +11543,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -11732,9 +11695,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -11889,9 +11849,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -12044,9 +12001,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -12201,9 +12155,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -12356,9 +12307,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -12513,9 +12461,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -12668,9 +12613,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -12825,9 +12767,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -12980,9 +12919,6 @@ height: 35px;</string>
          <family>Penguin</family>
          <pointsize>12</pointsize>
         </font>
-       </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
        </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
@@ -13137,9 +13073,6 @@ height: 35px;</string>
          <pointsize>12</pointsize>
         </font>
        </property>
-       <property name="cursor">
-        <cursorShape>PointingHandCursor</cursorShape>
-       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgba(255, 255, 255, 0);
 border-style:dotted;
@@ -13235,8 +13168,8 @@ height: 35px;</string>
    <widget class="Line" name="line">
     <property name="geometry">
      <rect>
-      <x>280</x>
-      <y>0</y>
+      <x>320</x>
+      <y>-10</y>
       <width>21</width>
       <height>661</height>
      </rect>
@@ -13248,14 +13181,105 @@ height: 35px;</string>
    <widget class="QLabel" name="label_4">
     <property name="geometry">
      <rect>
-      <x>300</x>
+      <x>360</x>
       <y>0</y>
-      <width>66</width>
+      <width>211</width>
       <height>21</height>
      </rect>
     </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>252</red>
+          <green>233</green>
+          <blue>79</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>252</red>
+          <green>233</green>
+          <blue>79</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>252</red>
+          <green>233</green>
+          <blue>79</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>252</red>
+          <green>233</green>
+          <blue>79</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>252</red>
+          <green>233</green>
+          <blue>79</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>252</red>
+          <green>233</green>
+          <blue>79</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>190</red>
+          <green>190</green>
+          <blue>190</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>190</red>
+          <green>190</green>
+          <blue>190</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>190</red>
+          <green>190</green>
+          <blue>190</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
     <property name="text">
-     <string>TextLabel</string>
+     <string>Campo de Localização </string>
     </property>
    </widget>
    <zorder>line</zorder>
@@ -13268,7 +13292,7 @@ height: 35px;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1000</width>
+     <width>1050</width>
      <height>26</height>
     </rect>
    </property>

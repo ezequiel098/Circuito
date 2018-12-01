@@ -60,32 +60,43 @@ bool MainWindow::PortaLogicaJaCadastrada(QPushButton* botao){
 }
 
 void MainWindow::on_e_botao_clicked(){
+    this->setCursor(QCursor(QPixmap("../Imagens/EM.png")));
     mudarEscolha(E);
 }
 void MainWindow::on_ou_botao_clicked(){
+    this->setCursor(QCursor(QPixmap("../Imagens/OuM.png")));
     mudarEscolha(OU);
 }
 void MainWindow::on_ouExclusiv_Botao_clicked(){
+    this->setCursor(QCursor(QPixmap("../Imagens/XOuM.png")));
     mudarEscolha(OU_EXCLUSIVO);
 }
 void MainWindow::on_nao_botao_clicked(){
+    this->setCursor(QCursor(QPixmap("../Imagens/NM.png")));
     mudarEscolha(NAO);
 }
 void MainWindow::on_botao0_botao_clicked(){
+    this->setCursor(QCursor(QPixmap("../Imagens/B0M.png")));
     mudarEscolha(BOTAO0);
 }
 void MainWindow::on_botao1_botao_clicked(){
+    this->setCursor(QCursor(QPixmap("../Imagens/B1M.png")));
     mudarEscolha(BOTAO1);
 }
 void MainWindow::on_LED_botao_clicked(){
+    this->setCursor(QCursor(QPixmap("../Imagens/LEDM.png")));
     mudarEscolha(LED);
 }
 void MainWindow::on_fioS_botao_clicked(){
+    this->setCursor(QCursor(QPixmap("../Imagens/FM.png")));
     mudarEscolha(FIOS);
 }
+void MainWindow::on_botaoMudar_botao_clicked(){
+    this->setCursor(QCursor(Qt::ArrowCursor));
+    mudarEscolha(BOTAOM);
+}
 
-void MainWindow::desenha()
-{
+void MainWindow::desenha(){
     this->update();
 }
 
@@ -158,8 +169,8 @@ void MainWindow::alterarEstadoBotoes(QPushButton* botao){
 
                     pAuxE = botao->geometry().center();
 
-                    pAuxE.setX(pAuxE.x()+295);
-                    pAuxE.setY(pAuxE.y()+40);
+                    pAuxE.setX(pAuxE.x()+365);
+                    pAuxE.setY(pAuxE.y()+60);
 
                     adicionarPonto(pAuxS, pAuxE);
                     desenha();
@@ -168,6 +179,8 @@ void MainWindow::alterarEstadoBotoes(QPushButton* botao){
                 } catch(exception& e){
                     std::cout << "Error" << std::endl;
                 }
+
+                mudarEscolha(FIOS);
             }
         break;
         case FIOS:
@@ -176,11 +189,32 @@ void MainWindow::alterarEstadoBotoes(QPushButton* botao){
 
                 pAuxS = botao->geometry().center();
 
-                pAuxS.setX(pAuxS.x()+295);
-                pAuxS.setY(pAuxS.y()+40);
-            }
+                pAuxS.setX(pAuxS.x()+365);
+                pAuxS.setY(pAuxS.y()+60);
 
-            mudarEscolha(FIOE);
+                mudarEscolha(FIOE);
+            }
+        break;
+        case BOTAOM:
+            if(PortaLogicaJaCadastrada(botao)){
+                PortaLogica* aux = verPortaLogica(botao);
+                if(aux->verEstado()<2){
+
+                    aux->mudarEstado();
+
+                    if(aux->Operacao()){
+                        botao->setText("");
+                        botao->setIcon(QIcon("../Imagens/Botao1.png"));
+                    }
+                    else{
+                        botao->setText("");
+                        botao->setIcon(QIcon("../Imagens/Botao0.png"));
+                    }
+
+                    atualizarPivores();
+                    desenha();
+                }
+            }
         break;
     }
 }
@@ -472,5 +506,3 @@ void MainWindow::on_pushButton_77_clicked(){
 void MainWindow::on_pushButton_78_clicked(){
     alterarEstadoBotoes(ui->pushButton_78);
 }
-
-
