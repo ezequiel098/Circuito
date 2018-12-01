@@ -19,10 +19,8 @@
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
 #include <QtGui/QMainWindow>
-#include <QtGui/QMenu>
 #include <QtGui/QMenuBar>
 #include <QtGui/QPushButton>
-#include <QtGui/QStatusBar>
 #include <QtGui/QToolBar>
 #include <QtGui/QVBoxLayout>
 #include <QtGui/QWidget>
@@ -126,17 +124,27 @@ public:
     QLabel *label_4;
     QLabel *label_5;
     QMenuBar *menuBar;
-    QMenu *menuCircuitos_Logicos;
     QToolBar *mainToolBar;
-    QStatusBar *statusBar;
 
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(1050, 700);
-        MainWindow->setMinimumSize(QSize(1050, 700));
-        MainWindow->setMaximumSize(QSize(1050, 700));
+        MainWindow->resize(1050, 630);
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(MainWindow->sizePolicy().hasHeightForWidth());
+        MainWindow->setSizePolicy(sizePolicy);
+        MainWindow->setMinimumSize(QSize(1050, 630));
+        MainWindow->setMaximumSize(QSize(1050, 630));
+        QFont font;
+        font.setFamily(QString::fromUtf8("Penguin"));
+        font.setPointSize(14);
+        font.setBold(true);
+        font.setWeight(75);
+        MainWindow->setFont(font);
+        MainWindow->setContextMenuPolicy(Qt::NoContextMenu);
         MainWindow->setStyleSheet(QString::fromUtf8(""));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
@@ -207,12 +215,12 @@ public:
         palette1.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette1.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         nao_botao->setPalette(palette1);
-        QFont font;
-        font.setFamily(QString::fromUtf8("Penguin"));
-        font.setPointSize(12);
-        font.setBold(true);
-        font.setWeight(75);
-        nao_botao->setFont(font);
+        QFont font1;
+        font1.setFamily(QString::fromUtf8("Penguin"));
+        font1.setPointSize(12);
+        font1.setBold(true);
+        font1.setWeight(75);
+        nao_botao->setFont(font1);
         nao_botao->setCursor(QCursor(Qt::PointingHandCursor));
         nao_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
@@ -263,7 +271,7 @@ public:
         palette3.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette3.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         LED_botao->setPalette(palette3);
-        LED_botao->setFont(font);
+        LED_botao->setFont(font1);
         LED_botao->setCursor(QCursor(Qt::PointingHandCursor));
         LED_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
@@ -292,14 +300,14 @@ public:
         palette4.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette4.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         ouExclusiv_Botao->setPalette(palette4);
-        ouExclusiv_Botao->setFont(font);
+        ouExclusiv_Botao->setFont(font1);
         ouExclusiv_Botao->setCursor(QCursor(Qt::PointingHandCursor));
         ouExclusiv_Botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
 "border-color: rgb(255, 255, 0);"));
         QIcon icon2;
-        icon2.addFile(QString::fromUtf8("../Imagens/OuI.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon2.addFile(QString::fromUtf8("../Imagens/OuExclusivoI.png"), QSize(), QIcon::Normal, QIcon::Off);
         ouExclusiv_Botao->setIcon(icon2);
         ouExclusiv_Botao->setIconSize(QSize(90, 30));
 
@@ -344,7 +352,7 @@ public:
         palette6.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette6.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         botao1_botao->setPalette(palette6);
-        botao1_botao->setFont(font);
+        botao1_botao->setFont(font1);
         botao1_botao->setCursor(QCursor(Qt::PointingHandCursor));
         botao1_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
@@ -370,7 +378,7 @@ public:
         palette7.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette7.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         botao0_botao->setPalette(palette7);
-        botao0_botao->setFont(font);
+        botao0_botao->setFont(font1);
         botao0_botao->setCursor(QCursor(Qt::PointingHandCursor));
         botao0_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
@@ -396,7 +404,7 @@ public:
         palette8.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette8.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         botaoMudar_botao->setPalette(palette8);
-        botaoMudar_botao->setFont(font);
+        botaoMudar_botao->setFont(font1);
         botaoMudar_botao->setCursor(QCursor(Qt::PointingHandCursor));
         botaoMudar_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
@@ -425,7 +433,7 @@ public:
         palette9.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette9.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         fioS_botao->setPalette(palette9);
-        fioS_botao->setFont(font);
+        fioS_botao->setFont(font1);
         fioS_botao->setCursor(QCursor(Qt::PointingHandCursor));
         fioS_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
@@ -451,13 +459,15 @@ public:
         palette10.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette10.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         ou_botao->setPalette(palette10);
-        ou_botao->setFont(font);
+        ou_botao->setFont(font1);
         ou_botao->setCursor(QCursor(Qt::PointingHandCursor));
         ou_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
 "border-color: rgb(255, 255, 0);"));
-        ou_botao->setIcon(icon2);
+        QIcon icon3;
+        icon3.addFile(QString::fromUtf8("../Imagens/OuI.png"), QSize(), QIcon::Normal, QIcon::Off);
+        ou_botao->setIcon(icon3);
         ou_botao->setIconSize(QSize(90, 30));
 
         gridLayout->addWidget(ou_botao, 1, 2, 1, 1);
@@ -478,15 +488,15 @@ public:
         palette11.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette11.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         e_botao->setPalette(palette11);
-        e_botao->setFont(font);
+        e_botao->setFont(font1);
         e_botao->setCursor(QCursor(Qt::PointingHandCursor));
         e_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
 "border-color: rgb(255, 255, 0);"));
-        QIcon icon3;
-        icon3.addFile(QString::fromUtf8("../Imagens/EI.png"), QSize(), QIcon::Normal, QIcon::Off);
-        e_botao->setIcon(icon3);
+        QIcon icon4;
+        icon4.addFile(QString::fromUtf8("../Imagens/EI.png"), QSize(), QIcon::Normal, QIcon::Off);
+        e_botao->setIcon(icon4);
         e_botao->setIconSize(QSize(90, 30));
 
         gridLayout->addWidget(e_botao, 1, 0, 1, 1);
@@ -537,10 +547,10 @@ public:
         palette13.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette13.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_57->setPalette(palette13);
-        QFont font1;
-        font1.setFamily(QString::fromUtf8("Penguin"));
-        font1.setPointSize(12);
-        pushButton_57->setFont(font1);
+        QFont font2;
+        font2.setFamily(QString::fromUtf8("Penguin"));
+        font2.setPointSize(12);
+        pushButton_57->setFont(font2);
         pushButton_57->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -568,7 +578,7 @@ public:
         palette14.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette14.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_19->setPalette(palette14);
-        pushButton_19->setFont(font1);
+        pushButton_19->setFont(font2);
         pushButton_19->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -596,7 +606,7 @@ public:
         palette15.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette15.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_21->setPalette(palette15);
-        pushButton_21->setFont(font1);
+        pushButton_21->setFont(font2);
         pushButton_21->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -624,7 +634,7 @@ public:
         palette16.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette16.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_22->setPalette(palette16);
-        pushButton_22->setFont(font1);
+        pushButton_22->setFont(font2);
         pushButton_22->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -652,7 +662,7 @@ public:
         palette17.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette17.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_69->setPalette(palette17);
-        pushButton_69->setFont(font1);
+        pushButton_69->setFont(font2);
         pushButton_69->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -680,7 +690,7 @@ public:
         palette18.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette18.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_75->setPalette(palette18);
-        pushButton_75->setFont(font1);
+        pushButton_75->setFont(font2);
         pushButton_75->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -708,7 +718,7 @@ public:
         palette19.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette19.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_8->setPalette(palette19);
-        pushButton_8->setFont(font1);
+        pushButton_8->setFont(font2);
         pushButton_8->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -736,7 +746,7 @@ public:
         palette20.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette20.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_48->setPalette(palette20);
-        pushButton_48->setFont(font1);
+        pushButton_48->setFont(font2);
         pushButton_48->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -764,7 +774,7 @@ public:
         palette21.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette21.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_40->setPalette(palette21);
-        pushButton_40->setFont(font1);
+        pushButton_40->setFont(font2);
         pushButton_40->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -792,7 +802,7 @@ public:
         palette22.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette22.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_18->setPalette(palette22);
-        pushButton_18->setFont(font1);
+        pushButton_18->setFont(font2);
         pushButton_18->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -820,7 +830,7 @@ public:
         palette23.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette23.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_76->setPalette(palette23);
-        pushButton_76->setFont(font1);
+        pushButton_76->setFont(font2);
         pushButton_76->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -848,7 +858,7 @@ public:
         palette24.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette24.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_62->setPalette(palette24);
-        pushButton_62->setFont(font1);
+        pushButton_62->setFont(font2);
         pushButton_62->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -876,7 +886,7 @@ public:
         palette25.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette25.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_52->setPalette(palette25);
-        pushButton_52->setFont(font1);
+        pushButton_52->setFont(font2);
         pushButton_52->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -904,7 +914,7 @@ public:
         palette26.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette26.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_23->setPalette(palette26);
-        pushButton_23->setFont(font1);
+        pushButton_23->setFont(font2);
         pushButton_23->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -932,7 +942,7 @@ public:
         palette27.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette27.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_25->setPalette(palette27);
-        pushButton_25->setFont(font1);
+        pushButton_25->setFont(font2);
         pushButton_25->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -960,7 +970,7 @@ public:
         palette28.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette28.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_70->setPalette(palette28);
-        pushButton_70->setFont(font1);
+        pushButton_70->setFont(font2);
         pushButton_70->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -988,7 +998,7 @@ public:
         palette29.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette29.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_20->setPalette(palette29);
-        pushButton_20->setFont(font1);
+        pushButton_20->setFont(font2);
         pushButton_20->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1016,7 +1026,7 @@ public:
         palette30.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette30.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_28->setPalette(palette30);
-        pushButton_28->setFont(font1);
+        pushButton_28->setFont(font2);
         pushButton_28->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1044,7 +1054,7 @@ public:
         palette31.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette31.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_26->setPalette(palette31);
-        pushButton_26->setFont(font1);
+        pushButton_26->setFont(font2);
         pushButton_26->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1072,7 +1082,7 @@ public:
         palette32.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette32.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_30->setPalette(palette32);
-        pushButton_30->setFont(font1);
+        pushButton_30->setFont(font2);
         pushButton_30->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1100,7 +1110,7 @@ public:
         palette33.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette33.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_46->setPalette(palette33);
-        pushButton_46->setFont(font1);
+        pushButton_46->setFont(font2);
         pushButton_46->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1128,7 +1138,7 @@ public:
         palette34.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette34.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_9->setPalette(palette34);
-        pushButton_9->setFont(font1);
+        pushButton_9->setFont(font2);
         pushButton_9->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1156,7 +1166,7 @@ public:
         palette35.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette35.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_24->setPalette(palette35);
-        pushButton_24->setFont(font1);
+        pushButton_24->setFont(font2);
         pushButton_24->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1184,7 +1194,7 @@ public:
         palette36.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette36.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_29->setPalette(palette36);
-        pushButton_29->setFont(font1);
+        pushButton_29->setFont(font2);
         pushButton_29->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1212,7 +1222,7 @@ public:
         palette37.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette37.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_12->setPalette(palette37);
-        pushButton_12->setFont(font1);
+        pushButton_12->setFont(font2);
         pushButton_12->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1240,7 +1250,7 @@ public:
         palette38.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette38.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_10->setPalette(palette38);
-        pushButton_10->setFont(font1);
+        pushButton_10->setFont(font2);
         pushButton_10->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1268,7 +1278,7 @@ public:
         palette39.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette39.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_11->setPalette(palette39);
-        pushButton_11->setFont(font1);
+        pushButton_11->setFont(font2);
         pushButton_11->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1296,7 +1306,7 @@ public:
         palette40.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette40.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_71->setPalette(palette40);
-        pushButton_71->setFont(font1);
+        pushButton_71->setFont(font2);
         pushButton_71->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1324,7 +1334,7 @@ public:
         palette41.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette41.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_15->setPalette(palette41);
-        pushButton_15->setFont(font1);
+        pushButton_15->setFont(font2);
         pushButton_15->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1352,7 +1362,7 @@ public:
         palette42.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette42.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_13->setPalette(palette42);
-        pushButton_13->setFont(font1);
+        pushButton_13->setFont(font2);
         pushButton_13->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1380,7 +1390,7 @@ public:
         palette43.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette43.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_14->setPalette(palette43);
-        pushButton_14->setFont(font1);
+        pushButton_14->setFont(font2);
         pushButton_14->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1408,7 +1418,7 @@ public:
         palette44.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette44.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_41->setPalette(palette44);
-        pushButton_41->setFont(font1);
+        pushButton_41->setFont(font2);
         pushButton_41->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1436,7 +1446,7 @@ public:
         palette45.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette45.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_16->setPalette(palette45);
-        pushButton_16->setFont(font1);
+        pushButton_16->setFont(font2);
         pushButton_16->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1464,7 +1474,7 @@ public:
         palette46.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette46.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_17->setPalette(palette46);
-        pushButton_17->setFont(font1);
+        pushButton_17->setFont(font2);
         pushButton_17->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1492,7 +1502,7 @@ public:
         palette47.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette47.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_58->setPalette(palette47);
-        pushButton_58->setFont(font1);
+        pushButton_58->setFont(font2);
         pushButton_58->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1520,7 +1530,7 @@ public:
         palette48.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette48.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_43->setPalette(palette48);
-        pushButton_43->setFont(font1);
+        pushButton_43->setFont(font2);
         pushButton_43->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1548,7 +1558,7 @@ public:
         palette49.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette49.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_45->setPalette(palette49);
-        pushButton_45->setFont(font1);
+        pushButton_45->setFont(font2);
         pushButton_45->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1576,7 +1586,7 @@ public:
         palette50.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette50.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_51->setPalette(palette50);
-        pushButton_51->setFont(font1);
+        pushButton_51->setFont(font2);
         pushButton_51->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1604,7 +1614,7 @@ public:
         palette51.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette51.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_63->setPalette(palette51);
-        pushButton_63->setFont(font1);
+        pushButton_63->setFont(font2);
         pushButton_63->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1632,7 +1642,7 @@ public:
         palette52.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette52.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_77->setPalette(palette52);
-        pushButton_77->setFont(font1);
+        pushButton_77->setFont(font2);
         pushButton_77->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1660,7 +1670,7 @@ public:
         palette53.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette53.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_27->setPalette(palette53);
-        pushButton_27->setFont(font1);
+        pushButton_27->setFont(font2);
         pushButton_27->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1688,7 +1698,7 @@ public:
         palette54.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette54.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_38->setPalette(palette54);
-        pushButton_38->setFont(font1);
+        pushButton_38->setFont(font2);
         pushButton_38->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1716,7 +1726,7 @@ public:
         palette55.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette55.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_31->setPalette(palette55);
-        pushButton_31->setFont(font1);
+        pushButton_31->setFont(font2);
         pushButton_31->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1744,7 +1754,7 @@ public:
         palette56.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette56.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_33->setPalette(palette56);
-        pushButton_33->setFont(font1);
+        pushButton_33->setFont(font2);
         pushButton_33->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1772,7 +1782,7 @@ public:
         palette57.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette57.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_32->setPalette(palette57);
-        pushButton_32->setFont(font1);
+        pushButton_32->setFont(font2);
         pushButton_32->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1800,7 +1810,7 @@ public:
         palette58.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette58.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_34->setPalette(palette58);
-        pushButton_34->setFont(font1);
+        pushButton_34->setFont(font2);
         pushButton_34->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1828,7 +1838,7 @@ public:
         palette59.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette59.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_35->setPalette(palette59);
-        pushButton_35->setFont(font1);
+        pushButton_35->setFont(font2);
         pushButton_35->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1856,7 +1866,7 @@ public:
         palette60.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette60.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_42->setPalette(palette60);
-        pushButton_42->setFont(font1);
+        pushButton_42->setFont(font2);
         pushButton_42->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1884,7 +1894,7 @@ public:
         palette61.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette61.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_39->setPalette(palette61);
-        pushButton_39->setFont(font1);
+        pushButton_39->setFont(font2);
         pushButton_39->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1912,7 +1922,7 @@ public:
         palette62.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette62.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_55->setPalette(palette62);
-        pushButton_55->setFont(font1);
+        pushButton_55->setFont(font2);
         pushButton_55->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1940,7 +1950,7 @@ public:
         palette63.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette63.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_37->setPalette(palette63);
-        pushButton_37->setFont(font1);
+        pushButton_37->setFont(font2);
         pushButton_37->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1968,7 +1978,7 @@ public:
         palette64.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette64.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_36->setPalette(palette64);
-        pushButton_36->setFont(font1);
+        pushButton_36->setFont(font2);
         pushButton_36->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -1996,7 +2006,7 @@ public:
         palette65.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette65.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_44->setPalette(palette65);
-        pushButton_44->setFont(font1);
+        pushButton_44->setFont(font2);
         pushButton_44->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2024,7 +2034,7 @@ public:
         palette66.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette66.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_49->setPalette(palette66);
-        pushButton_49->setFont(font1);
+        pushButton_49->setFont(font2);
         pushButton_49->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2052,7 +2062,7 @@ public:
         palette67.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette67.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_50->setPalette(palette67);
-        pushButton_50->setFont(font1);
+        pushButton_50->setFont(font2);
         pushButton_50->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2080,7 +2090,7 @@ public:
         palette68.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette68.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_47->setPalette(palette68);
-        pushButton_47->setFont(font1);
+        pushButton_47->setFont(font2);
         pushButton_47->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2108,7 +2118,7 @@ public:
         palette69.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette69.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_56->setPalette(palette69);
-        pushButton_56->setFont(font1);
+        pushButton_56->setFont(font2);
         pushButton_56->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2136,7 +2146,7 @@ public:
         palette70.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette70.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_54->setPalette(palette70);
-        pushButton_54->setFont(font1);
+        pushButton_54->setFont(font2);
         pushButton_54->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2164,7 +2174,7 @@ public:
         palette71.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette71.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_53->setPalette(palette71);
-        pushButton_53->setFont(font1);
+        pushButton_53->setFont(font2);
         pushButton_53->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2192,7 +2202,7 @@ public:
         palette72.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette72.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_60->setPalette(palette72);
-        pushButton_60->setFont(font1);
+        pushButton_60->setFont(font2);
         pushButton_60->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2220,7 +2230,7 @@ public:
         palette73.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette73.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_68->setPalette(palette73);
-        pushButton_68->setFont(font1);
+        pushButton_68->setFont(font2);
         pushButton_68->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2248,7 +2258,7 @@ public:
         palette74.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette74.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_59->setPalette(palette74);
-        pushButton_59->setFont(font1);
+        pushButton_59->setFont(font2);
         pushButton_59->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2276,7 +2286,7 @@ public:
         palette75.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette75.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_65->setPalette(palette75);
-        pushButton_65->setFont(font1);
+        pushButton_65->setFont(font2);
         pushButton_65->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2304,7 +2314,7 @@ public:
         palette76.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette76.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_67->setPalette(palette76);
-        pushButton_67->setFont(font1);
+        pushButton_67->setFont(font2);
         pushButton_67->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2332,7 +2342,7 @@ public:
         palette77.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette77.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_66->setPalette(palette77);
-        pushButton_66->setFont(font1);
+        pushButton_66->setFont(font2);
         pushButton_66->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2360,7 +2370,7 @@ public:
         palette78.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette78.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_61->setPalette(palette78);
-        pushButton_61->setFont(font1);
+        pushButton_61->setFont(font2);
         pushButton_61->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2388,7 +2398,7 @@ public:
         palette79.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette79.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_72->setPalette(palette79);
-        pushButton_72->setFont(font1);
+        pushButton_72->setFont(font2);
         pushButton_72->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2416,7 +2426,7 @@ public:
         palette80.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette80.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_78->setPalette(palette80);
-        pushButton_78->setFont(font1);
+        pushButton_78->setFont(font2);
         pushButton_78->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2444,7 +2454,7 @@ public:
         palette81.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette81.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_74->setPalette(palette81);
-        pushButton_74->setFont(font1);
+        pushButton_74->setFont(font2);
         pushButton_74->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2472,7 +2482,7 @@ public:
         palette82.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette82.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_73->setPalette(palette82);
-        pushButton_73->setFont(font1);
+        pushButton_73->setFont(font2);
         pushButton_73->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2500,7 +2510,7 @@ public:
         palette83.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette83.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_7->setPalette(palette83);
-        pushButton_7->setFont(font1);
+        pushButton_7->setFont(font2);
         pushButton_7->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2528,7 +2538,7 @@ public:
         palette84.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette84.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_64->setPalette(palette84);
-        pushButton_64->setFont(font1);
+        pushButton_64->setFont(font2);
         pushButton_64->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
@@ -2644,19 +2654,12 @@ public:
         label_5->raise();
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 1050, 26));
-        menuCircuitos_Logicos = new QMenu(menuBar);
-        menuCircuitos_Logicos->setObjectName(QString::fromUtf8("menuCircuitos_Logicos"));
+        menuBar->setGeometry(QRect(0, 0, 1050, 27));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
         mainToolBar->setStyleSheet(QString::fromUtf8(""));
         MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
-        statusBar = new QStatusBar(MainWindow);
-        statusBar->setObjectName(QString::fromUtf8("statusBar"));
-        MainWindow->setStatusBar(statusBar);
-
-        menuBar->addAction(menuCircuitos_Logicos->menuAction());
 
         retranslateUi(MainWindow);
 
@@ -2665,7 +2668,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0, QApplication::UnicodeUTF8));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "Simulador de Circuitos L\303\263gicos", 0, QApplication::UnicodeUTF8));
         groupBox->setTitle(QString());
         nao_botao->setText(QString());
         label_2->setText(QApplication::translate("MainWindow", "Portas L\303\263gicas:", 0, QApplication::UnicodeUTF8));
@@ -2754,7 +2757,6 @@ public:
         pushButton_64->setText(QString());
         label_4->setText(QApplication::translate("MainWindow", "Campo de Constru\303\247\303\243o ", 0, QApplication::UnicodeUTF8));
         label_5->setText(QApplication::translate("MainWindow", "Campo de Escolhas", 0, QApplication::UnicodeUTF8));
-        menuCircuitos_Logicos->setTitle(QApplication::translate("MainWindow", "Circuitos Logicos", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

@@ -170,7 +170,7 @@ void MainWindow::alterarEstadoBotoes(QPushButton* botao){
                     pAuxE = botao->geometry().center();
 
                     pAuxE.setX(pAuxE.x()+365);
-                    pAuxE.setY(pAuxE.y()+60);
+                    pAuxE.setY(pAuxE.y()+30);
 
                     adicionarPonto(pAuxS, pAuxE);
                     desenha();
@@ -190,7 +190,7 @@ void MainWindow::alterarEstadoBotoes(QPushButton* botao){
                 pAuxS = botao->geometry().center();
 
                 pAuxS.setX(pAuxS.x()+365);
-                pAuxS.setY(pAuxS.y()+60);
+                pAuxS.setY(pAuxS.y()+30);
 
                 mudarEscolha(FIOE);
             }
