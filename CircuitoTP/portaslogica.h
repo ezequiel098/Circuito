@@ -14,12 +14,20 @@ class PortaLogica{
     public:
         PortaLogica(){
             contador = 0;
+
+            entrada1 = NULL;
+            entrada2 = NULL;
         }
 
-        virtual bool Operacao(){
-            return 0;
+        virtual bool Operacao(){return 0;}
+        virtual bool entradaValida(){
+            if(entrada1==NULL || entrada2==NULL)
+                return 0;
+
+            return entrada1->entradaValida() && entrada2->entradaValida();
         }
         virtual void adicionarEntrada(PortaLogica* pl){}
+
 };
 
 class E: public PortaLogica{
@@ -51,6 +59,11 @@ class Nao: public PortaLogica{
         Nao();
 
         bool Operacao();
+        bool entradaValida(){
+            if(entrada1==NULL)
+                return 0;
+            return entrada1->entradaValida();
+        }
         void adicionarEntrada(PortaLogica*);
 };
 
@@ -62,6 +75,9 @@ class Botao: public PortaLogica{
         Botao(bool);
 
         bool Operacao();
+        bool entradaValida(){
+            return 1;
+        }
 };
 
 class LED: public PortaLogica{
@@ -69,6 +85,11 @@ class LED: public PortaLogica{
         LED();
 
         bool Operacao();
+        bool entradaValida(){
+            if(entrada1==NULL)
+                return 0;
+            return entrada1->entradaValida();
+        }
         void adicionarEntrada(PortaLogica*);
 };
 #endif

@@ -24,7 +24,10 @@ Ou::Ou(){
     qtdEntradas = 2;
 }
 bool Ou::Operacao(){
-    return entrada1->Operacao() || entrada2->Operacao();
+    if(entradaValida())
+        return entrada1->Operacao() || entrada2->Operacao();
+
+    return 0;
 }
 void Ou::adicionarEntrada(PortaLogica* pL){
     if(contador==0){
@@ -44,7 +47,10 @@ OuExclusivo::OuExclusivo(){
     qtdEntradas = 2;
 }
 bool OuExclusivo::Operacao(){
-    return entrada1->Operacao() ^ entrada2->Operacao();
+    if(entradaValida())
+        return entrada1->Operacao() ^ entrada2->Operacao();
+
+    return 0;
 }
 void OuExclusivo::adicionarEntrada(PortaLogica* pL){
     if(contador==0){
@@ -61,11 +67,14 @@ void OuExclusivo::adicionarEntrada(PortaLogica* pL){
 }
 
 Nao::Nao(){
+    entrada2 = NULL;
     qtdEntradas = 1;
 }
 bool Nao::Operacao(){
+    if(entradaValida())
+        return !(entrada1->Operacao());
 
-    return !(entrada1->Operacao());
+    return 0;
 }
 void Nao::adicionarEntrada(PortaLogica* pL){
     if(contador==0){
@@ -76,6 +85,9 @@ void Nao::adicionarEntrada(PortaLogica* pL){
 }
 
 Botao::Botao(){
+    entrada1 = NULL;
+    entrada2 = NULL;
+
     estado = false;
 
     qtdEntradas = 0;
@@ -91,10 +103,14 @@ bool Botao::Operacao(){
 
 
 LED::LED(){
+    entrada2 = NULL;
     qtdEntradas = 1;
 }
 bool LED::Operacao(){
-    return entrada1->Operacao();
+    if(entradaValida())
+        return entrada1->Operacao();
+
+    return 0;
 }
 void LED::adicionarEntrada(PortaLogica* pL){
     if(contador==0){

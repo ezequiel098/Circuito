@@ -11,6 +11,9 @@
 #include <QLabel>
 #include <utility>
 #include "portaslogica.h"
+#include <exception>
+
+using namespace std;
 
 enum Escolhas {E, OU, OU_EXCLUSIVO, NAO, BOTAO0, BOTAO1, LED, FIOE, FIOS, DEFAULT};
 
@@ -27,7 +30,7 @@ public:
     PortaLogica* pLAux;
     QPoint pAuxE, pAuxS;
 
-    explicit MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(QWidget *parent = NULL);
     ~MainWindow();
 
     Escolhas verEscolha();
@@ -58,7 +61,6 @@ private slots:
     void on_LED_botao_clicked();
 
     void on_fioS_botao_clicked();
-    void on_fioE_botao_clicked();
 
     void on_pushButton_7_clicked();
     void on_pushButton_8_clicked();
@@ -149,11 +151,13 @@ protected:
         int width = size().width() - 3;
         int height = size().height() - 5;
 
-        painter.fillRect(0, 0, width, height, QColor(255,219,88));
+        painter.fillRect(0, 0, width, height, QColor(7, 13, 127));
 
         if(verEscolha()==FIOE){
 
             //painter.fillRect(wAuxS, hAuxS, wAuxE, hAuxE, QColor(0,0,255));
+
+            painter.setPen(QColor(255,255,0));
 
             for(unsigned long int i=0;i<pontos.size();i++)
                 painter.drawLine(pontos[i].first, pontos[i].second);

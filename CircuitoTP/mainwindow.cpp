@@ -30,11 +30,17 @@ void MainWindow::atualizarPivores(){
     for(unsigned long int i=0;i<pivores.size();i++){
         pivores[i]->setText("");
 
-        if(verPortaLogica(pivores[i])->Operacao()){
-            pivores[i]->setIcon(QIcon("../Imagens/LedAceso.png"));
-        }
-        else{
-            pivores[i]->setIcon(QIcon("../Imagens/LedApagado.png"));
+        try{
+            if(verPortaLogica(pivores[i])->entradaValida()){
+                if(verPortaLogica(pivores[i])->Operacao()){
+                    pivores[i]->setIcon(QIcon("../Imagens/LedAceso.png"));
+                }
+                else{
+                    pivores[i]->setIcon(QIcon("../Imagens/LedApagado.png"));
+                }
+            }
+        } catch(exception& e){
+            std::cout << "Error" << std::endl;
         }
     }
 }
@@ -73,9 +79,6 @@ void MainWindow::on_botao1_botao_clicked(){
 }
 void MainWindow::on_LED_botao_clicked(){
     mudarEscolha(LED);
-}
-void MainWindow::on_fioE_botao_clicked(){
-    mudarEscolha(FIOE);
 }
 void MainWindow::on_fioS_botao_clicked(){
     mudarEscolha(FIOS);
@@ -148,17 +151,23 @@ void MainWindow::alterarEstadoBotoes(QPushButton* botao){
         break;
         case FIOE:
             if(PortaLogicaJaCadastrada(botao)){
-                verPortaLogica(botao)->adicionarEntrada(pLAux);
+                try{
+                    verPortaLogica(botao)->adicionarEntrada(pLAux);
 
-                atualizarPivores();
+                    atualizarPivores();
 
-                pAuxE = botao->geometry().center();
+                    pAuxE = botao->geometry().center();
 
-                pAuxE.setX(pAuxE.x()+350);
-                pAuxE.setY(pAuxE.y()+50);
+                    pAuxE.setX(pAuxE.x()+295);
+                    pAuxE.setY(pAuxE.y()+40);
 
-                adicionarPonto(pAuxS, pAuxE);
-                desenha();
+                    adicionarPonto(pAuxS, pAuxE);
+                    desenha();
+
+                    pLAux = NULL;
+                } catch(exception& e){
+                    std::cout << "Error" << std::endl;
+                }
             }
         break;
         case FIOS:
@@ -167,8 +176,8 @@ void MainWindow::alterarEstadoBotoes(QPushButton* botao){
 
                 pAuxS = botao->geometry().center();
 
-                pAuxS.setX(pAuxS.x()+350);
-                pAuxS.setY(pAuxS.y()+50);
+                pAuxS.setX(pAuxS.x()+295);
+                pAuxS.setY(pAuxS.y()+40);
             }
 
             mudarEscolha(FIOE);
