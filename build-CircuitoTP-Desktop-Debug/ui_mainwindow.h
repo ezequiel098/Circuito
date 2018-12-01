@@ -40,14 +40,14 @@ public:
     QPushButton *LED_botao;
     QPushButton *ouExclusiv_Botao;
     QLabel *label;
-    QPushButton *ou_botao;
-    QPushButton *e_botao;
-    QLabel *label_3;
-    QPushButton *fioS_botao;
     QVBoxLayout *verticalLayout;
     QPushButton *botao1_botao;
     QPushButton *botao0_botao;
     QPushButton *botaoMudar_botao;
+    QPushButton *fioS_botao;
+    QPushButton *ou_botao;
+    QPushButton *e_botao;
+    QLabel *label_3;
     QWidget *gridLayoutWidget_2;
     QGridLayout *gridLayout_2;
     QPushButton *pushButton_57;
@@ -124,6 +124,7 @@ public:
     QPushButton *pushButton_64;
     QFrame *line;
     QLabel *label_4;
+    QLabel *label_5;
     QMenuBar *menuBar;
     QMenu *menuCircuitos_Logicos;
     QToolBar *mainToolBar;
@@ -218,7 +219,7 @@ public:
 "border-width: 0.5px;\n"
 "border-color: rgb(255, 255, 0);"));
         QIcon icon;
-        icon.addFile(QString::fromUtf8("../Imagens/Nao.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon.addFile(QString::fromUtf8("../Imagens/NaoI.png"), QSize(), QIcon::Normal, QIcon::Off);
         nao_botao->setIcon(icon);
         nao_botao->setIconSize(QSize(90, 30));
 
@@ -242,6 +243,7 @@ public:
         palette2.setBrush(QPalette::Disabled, QPalette::ButtonText, brush5);
         palette2.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
         label_2->setPalette(palette2);
+        label_2->setStyleSheet(QString::fromUtf8("font: 75 14pt \"Penguin\";"));
 
         gridLayout->addWidget(label_2, 0, 0, 1, 1);
 
@@ -297,7 +299,7 @@ public:
 "border-width: 0.5px;\n"
 "border-color: rgb(255, 255, 0);"));
         QIcon icon2;
-        icon2.addFile(QString::fromUtf8("../Imagens/OuExclusivo.png"), QSize(), QIcon::Normal, QIcon::Off);
+        icon2.addFile(QString::fromUtf8("../Imagens/OuI.png"), QSize(), QIcon::Normal, QIcon::Off);
         ouExclusiv_Botao->setIcon(icon2);
         ouExclusiv_Botao->setIconSize(QSize(90, 30));
 
@@ -319,11 +321,15 @@ public:
         palette5.setBrush(QPalette::Disabled, QPalette::ButtonText, brush5);
         palette5.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
         label->setPalette(palette5);
+        label->setStyleSheet(QString::fromUtf8("font: 75 14pt \"Penguin\";"));
 
         gridLayout->addWidget(label, 7, 0, 1, 1);
 
-        ou_botao = new QPushButton(groupBox);
-        ou_botao->setObjectName(QString::fromUtf8("ou_botao"));
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setSpacing(6);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        botao1_botao = new QPushButton(groupBox);
+        botao1_botao->setObjectName(QString::fromUtf8("botao1_botao"));
         QPalette palette6;
         palette6.setBrush(QPalette::Active, QPalette::Button, brush2);
         palette6.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
@@ -337,22 +343,19 @@ public:
         palette6.setBrush(QPalette::Disabled, QPalette::ButtonText, brush4);
         palette6.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette6.setBrush(QPalette::Disabled, QPalette::Window, brush2);
-        ou_botao->setPalette(palette6);
-        ou_botao->setFont(font);
-        ou_botao->setCursor(QCursor(Qt::PointingHandCursor));
-        ou_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+        botao1_botao->setPalette(palette6);
+        botao1_botao->setFont(font);
+        botao1_botao->setCursor(QCursor(Qt::PointingHandCursor));
+        botao1_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
 "border-color: rgb(255, 255, 0);"));
-        QIcon icon3;
-        icon3.addFile(QString::fromUtf8("../Imagens/Ou.png"), QSize(), QIcon::Normal, QIcon::Off);
-        ou_botao->setIcon(icon3);
-        ou_botao->setIconSize(QSize(90, 30));
+        botao1_botao->setIconSize(QSize(90, 30));
 
-        gridLayout->addWidget(ou_botao, 1, 2, 1, 1);
+        verticalLayout->addWidget(botao1_botao);
 
-        e_botao = new QPushButton(groupBox);
-        e_botao->setObjectName(QString::fromUtf8("e_botao"));
+        botao0_botao = new QPushButton(groupBox);
+        botao0_botao->setObjectName(QString::fromUtf8("botao0_botao"));
         QPalette palette7;
         palette7.setBrush(QPalette::Active, QPalette::Button, brush2);
         palette7.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
@@ -366,38 +369,45 @@ public:
         palette7.setBrush(QPalette::Disabled, QPalette::ButtonText, brush4);
         palette7.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette7.setBrush(QPalette::Disabled, QPalette::Window, brush2);
-        e_botao->setPalette(palette7);
-        e_botao->setFont(font);
-        e_botao->setCursor(QCursor(Qt::PointingHandCursor));
-        e_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+        botao0_botao->setPalette(palette7);
+        botao0_botao->setFont(font);
+        botao0_botao->setCursor(QCursor(Qt::PointingHandCursor));
+        botao0_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
 "border-color: rgb(255, 255, 0);"));
-        QIcon icon4;
-        icon4.addFile(QString::fromUtf8("../Imagens/E.png"), QSize(), QIcon::Normal, QIcon::Off);
-        e_botao->setIcon(icon4);
-        e_botao->setIconSize(QSize(90, 30));
+        botao0_botao->setIconSize(QSize(90, 30));
 
-        gridLayout->addWidget(e_botao, 1, 0, 1, 1);
+        verticalLayout->addWidget(botao0_botao);
 
-        label_3 = new QLabel(groupBox);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
+        botaoMudar_botao = new QPushButton(groupBox);
+        botaoMudar_botao->setObjectName(QString::fromUtf8("botaoMudar_botao"));
         QPalette palette8;
-        palette8.setBrush(QPalette::Active, QPalette::WindowText, brush);
-        palette8.setBrush(QPalette::Active, QPalette::Text, brush);
-        palette8.setBrush(QPalette::Active, QPalette::ButtonText, brush);
-        palette8.setBrush(QPalette::Active, QPalette::ToolTipText, brush);
-        palette8.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
-        palette8.setBrush(QPalette::Inactive, QPalette::Text, brush);
-        palette8.setBrush(QPalette::Inactive, QPalette::ButtonText, brush);
-        palette8.setBrush(QPalette::Inactive, QPalette::ToolTipText, brush);
-        palette8.setBrush(QPalette::Disabled, QPalette::WindowText, brush5);
-        palette8.setBrush(QPalette::Disabled, QPalette::Text, brush5);
-        palette8.setBrush(QPalette::Disabled, QPalette::ButtonText, brush5);
-        palette8.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
-        label_3->setPalette(palette8);
+        palette8.setBrush(QPalette::Active, QPalette::Button, brush2);
+        palette8.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
+        palette8.setBrush(QPalette::Active, QPalette::Base, brush2);
+        palette8.setBrush(QPalette::Active, QPalette::Window, brush2);
+        palette8.setBrush(QPalette::Inactive, QPalette::Button, brush2);
+        palette8.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
+        palette8.setBrush(QPalette::Inactive, QPalette::Base, brush2);
+        palette8.setBrush(QPalette::Inactive, QPalette::Window, brush2);
+        palette8.setBrush(QPalette::Disabled, QPalette::Button, brush2);
+        palette8.setBrush(QPalette::Disabled, QPalette::ButtonText, brush4);
+        palette8.setBrush(QPalette::Disabled, QPalette::Base, brush2);
+        palette8.setBrush(QPalette::Disabled, QPalette::Window, brush2);
+        botaoMudar_botao->setPalette(palette8);
+        botaoMudar_botao->setFont(font);
+        botaoMudar_botao->setCursor(QCursor(Qt::PointingHandCursor));
+        botaoMudar_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+"border-style:dotted;\n"
+"border-width: 0.5px;\n"
+"border-color: rgb(255, 255, 0);"));
+        botaoMudar_botao->setIconSize(QSize(90, 30));
 
-        gridLayout->addWidget(label_3, 10, 0, 1, 1);
+        verticalLayout->addWidget(botaoMudar_botao);
+
+
+        gridLayout->addLayout(verticalLayout, 8, 0, 1, 2);
 
         fioS_botao = new QPushButton(groupBox);
         fioS_botao->setObjectName(QString::fromUtf8("fioS_botao"));
@@ -425,11 +435,8 @@ public:
 
         gridLayout->addWidget(fioS_botao, 11, 0, 1, 3);
 
-        verticalLayout = new QVBoxLayout();
-        verticalLayout->setSpacing(6);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
-        botao1_botao = new QPushButton(groupBox);
-        botao1_botao->setObjectName(QString::fromUtf8("botao1_botao"));
+        ou_botao = new QPushButton(groupBox);
+        ou_botao->setObjectName(QString::fromUtf8("ou_botao"));
         QPalette palette10;
         palette10.setBrush(QPalette::Active, QPalette::Button, brush2);
         palette10.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
@@ -443,19 +450,20 @@ public:
         palette10.setBrush(QPalette::Disabled, QPalette::ButtonText, brush4);
         palette10.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette10.setBrush(QPalette::Disabled, QPalette::Window, brush2);
-        botao1_botao->setPalette(palette10);
-        botao1_botao->setFont(font);
-        botao1_botao->setCursor(QCursor(Qt::PointingHandCursor));
-        botao1_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+        ou_botao->setPalette(palette10);
+        ou_botao->setFont(font);
+        ou_botao->setCursor(QCursor(Qt::PointingHandCursor));
+        ou_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
 "border-color: rgb(255, 255, 0);"));
-        botao1_botao->setIconSize(QSize(90, 30));
+        ou_botao->setIcon(icon2);
+        ou_botao->setIconSize(QSize(90, 30));
 
-        verticalLayout->addWidget(botao1_botao);
+        gridLayout->addWidget(ou_botao, 1, 2, 1, 1);
 
-        botao0_botao = new QPushButton(groupBox);
-        botao0_botao->setObjectName(QString::fromUtf8("botao0_botao"));
+        e_botao = new QPushButton(groupBox);
+        e_botao->setObjectName(QString::fromUtf8("e_botao"));
         QPalette palette11;
         palette11.setBrush(QPalette::Active, QPalette::Button, brush2);
         palette11.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
@@ -469,45 +477,39 @@ public:
         palette11.setBrush(QPalette::Disabled, QPalette::ButtonText, brush4);
         palette11.setBrush(QPalette::Disabled, QPalette::Base, brush2);
         palette11.setBrush(QPalette::Disabled, QPalette::Window, brush2);
-        botao0_botao->setPalette(palette11);
-        botao0_botao->setFont(font);
-        botao0_botao->setCursor(QCursor(Qt::PointingHandCursor));
-        botao0_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
+        e_botao->setPalette(palette11);
+        e_botao->setFont(font);
+        e_botao->setCursor(QCursor(Qt::PointingHandCursor));
+        e_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
 "border-color: rgb(255, 255, 0);"));
-        botao0_botao->setIconSize(QSize(90, 30));
+        QIcon icon3;
+        icon3.addFile(QString::fromUtf8("../Imagens/EI.png"), QSize(), QIcon::Normal, QIcon::Off);
+        e_botao->setIcon(icon3);
+        e_botao->setIconSize(QSize(90, 30));
 
-        verticalLayout->addWidget(botao0_botao);
+        gridLayout->addWidget(e_botao, 1, 0, 1, 1);
 
-        botaoMudar_botao = new QPushButton(groupBox);
-        botaoMudar_botao->setObjectName(QString::fromUtf8("botaoMudar_botao"));
+        label_3 = new QLabel(groupBox);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
         QPalette palette12;
-        palette12.setBrush(QPalette::Active, QPalette::Button, brush2);
-        palette12.setBrush(QPalette::Active, QPalette::ButtonText, brush3);
-        palette12.setBrush(QPalette::Active, QPalette::Base, brush2);
-        palette12.setBrush(QPalette::Active, QPalette::Window, brush2);
-        palette12.setBrush(QPalette::Inactive, QPalette::Button, brush2);
-        palette12.setBrush(QPalette::Inactive, QPalette::ButtonText, brush3);
-        palette12.setBrush(QPalette::Inactive, QPalette::Base, brush2);
-        palette12.setBrush(QPalette::Inactive, QPalette::Window, brush2);
-        palette12.setBrush(QPalette::Disabled, QPalette::Button, brush2);
-        palette12.setBrush(QPalette::Disabled, QPalette::ButtonText, brush4);
-        palette12.setBrush(QPalette::Disabled, QPalette::Base, brush2);
-        palette12.setBrush(QPalette::Disabled, QPalette::Window, brush2);
-        botaoMudar_botao->setPalette(palette12);
-        botaoMudar_botao->setFont(font);
-        botaoMudar_botao->setCursor(QCursor(Qt::PointingHandCursor));
-        botaoMudar_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
-"border-style:dotted;\n"
-"border-width: 0.5px;\n"
-"border-color: rgb(255, 255, 0);"));
-        botaoMudar_botao->setIconSize(QSize(90, 30));
+        palette12.setBrush(QPalette::Active, QPalette::WindowText, brush);
+        palette12.setBrush(QPalette::Active, QPalette::Text, brush);
+        palette12.setBrush(QPalette::Active, QPalette::ButtonText, brush);
+        palette12.setBrush(QPalette::Active, QPalette::ToolTipText, brush);
+        palette12.setBrush(QPalette::Inactive, QPalette::WindowText, brush);
+        palette12.setBrush(QPalette::Inactive, QPalette::Text, brush);
+        palette12.setBrush(QPalette::Inactive, QPalette::ButtonText, brush);
+        palette12.setBrush(QPalette::Inactive, QPalette::ToolTipText, brush);
+        palette12.setBrush(QPalette::Disabled, QPalette::WindowText, brush5);
+        palette12.setBrush(QPalette::Disabled, QPalette::Text, brush5);
+        palette12.setBrush(QPalette::Disabled, QPalette::ButtonText, brush5);
+        palette12.setBrush(QPalette::Disabled, QPalette::ToolTipText, brush);
+        label_3->setPalette(palette12);
+        label_3->setStyleSheet(QString::fromUtf8("font: 75 14pt \"Penguin\";"));
 
-        verticalLayout->addWidget(botaoMudar_botao);
-
-
-        gridLayout->addLayout(verticalLayout, 8, 0, 1, 2);
+        gridLayout->addWidget(label_3, 10, 0, 1, 1);
 
         gridLayoutWidget_2 = new QWidget(centralWidget);
         gridLayoutWidget_2->setObjectName(QString::fromUtf8("gridLayoutWidget_2"));
@@ -2615,7 +2617,7 @@ public:
         line->setFrameShadow(QFrame::Sunken);
         label_4 = new QLabel(centralWidget);
         label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setGeometry(QRect(360, 0, 211, 21));
+        label_4->setGeometry(QRect(350, 10, 211, 21));
         QPalette palette85;
         palette85.setBrush(QPalette::Active, QPalette::WindowText, brush);
         palette85.setBrush(QPalette::Active, QPalette::Text, brush);
@@ -2627,11 +2629,19 @@ public:
         palette85.setBrush(QPalette::Disabled, QPalette::Text, brush5);
         palette85.setBrush(QPalette::Disabled, QPalette::ButtonText, brush5);
         label_4->setPalette(palette85);
+        label_4->setStyleSheet(QString::fromUtf8("\n"
+"font: 75 16pt \"Penguin\";"));
+        label_5 = new QLabel(centralWidget);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setGeometry(QRect(20, 10, 211, 21));
+        label_5->setStyleSheet(QString::fromUtf8("color:rgb(252, 233, 79);\n"
+"font: 75 16pt \"Penguin\";"));
         MainWindow->setCentralWidget(centralWidget);
         line->raise();
         groupBox->raise();
         gridLayoutWidget_2->raise();
         label_4->raise();
+        label_5->raise();
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
         menuBar->setGeometry(QRect(0, 0, 1050, 26));
@@ -2662,14 +2672,14 @@ public:
         LED_botao->setText(QString());
         ouExclusiv_Botao->setText(QString());
         label->setText(QApplication::translate("MainWindow", "Entradas e Saidas:", 0, QApplication::UnicodeUTF8));
-        ou_botao->setText(QString());
-        e_botao->setText(QString());
-        label_3->setText(QApplication::translate("MainWindow", "Liga\303\247\303\243o", 0, QApplication::UnicodeUTF8));
-        fioS_botao->setText(QApplication::translate("MainWindow", "Fio\n"
-"Saida P/ Entrada", 0, QApplication::UnicodeUTF8));
         botao1_botao->setText(QApplication::translate("MainWindow", "NIvel l\303\263gico 1", 0, QApplication::UnicodeUTF8));
         botao0_botao->setText(QApplication::translate("MainWindow", "NIvel l\303\263gico 0", 0, QApplication::UnicodeUTF8));
         botaoMudar_botao->setText(QApplication::translate("MainWindow", "Mudar Nivel L\303\263gico", 0, QApplication::UnicodeUTF8));
+        fioS_botao->setText(QApplication::translate("MainWindow", "Fio\n"
+"Saida P/ Entrada", 0, QApplication::UnicodeUTF8));
+        ou_botao->setText(QString());
+        e_botao->setText(QString());
+        label_3->setText(QApplication::translate("MainWindow", "Liga\303\247\303\243o", 0, QApplication::UnicodeUTF8));
         pushButton_57->setText(QString());
         pushButton_19->setText(QString());
         pushButton_21->setText(QString());
@@ -2742,7 +2752,8 @@ public:
         pushButton_73->setText(QString());
         pushButton_7->setText(QString());
         pushButton_64->setText(QString());
-        label_4->setText(QApplication::translate("MainWindow", "Campo de Localiza\303\247\303\243o ", 0, QApplication::UnicodeUTF8));
+        label_4->setText(QApplication::translate("MainWindow", "Campo de Constru\303\247\303\243o ", 0, QApplication::UnicodeUTF8));
+        label_5->setText(QApplication::translate("MainWindow", "Campo de Escolhas", 0, QApplication::UnicodeUTF8));
         menuCircuitos_Logicos->setTitle(QApplication::translate("MainWindow", "Circuitos Logicos", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
