@@ -13171,6 +13171,9 @@ font: 75 12pt &quot;Penguin&quot;;</string>
          <bold>false</bold>
         </font>
        </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
        <property name="styleSheet">
         <string notr="true">background-color: rgb(252, 233, 79);
 border-radius:5px;

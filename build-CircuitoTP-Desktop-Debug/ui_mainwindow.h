@@ -2586,6 +2586,7 @@ public:
         pushButton_2 = new QPushButton(gridLayoutWidget_2);
         pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
         pushButton_2->setFont(font3);
+        pushButton_2->setCursor(QCursor(Qt::PointingHandCursor));
         pushButton_2->setStyleSheet(QString::fromUtf8("background-color: rgb(252, 233, 79);\n"
 "border-radius:5px;\n"
 "height: 35px;\n"
