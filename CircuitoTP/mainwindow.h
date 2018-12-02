@@ -27,10 +27,6 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    int contador;
-    PortaLogica* pLAux;
-    QPoint pAuxE, pAuxS;
-
     explicit MainWindow(QWidget *parent = NULL);
     ~MainWindow();
 
@@ -141,6 +137,9 @@ private slots:
 private:
     Escolhas escolha;
 
+    PortaLogica* pLAux;
+    QPoint pAuxE, pAuxS;
+
     std::vector <QPushButton*> pivores;
     std::vector <std::pair <QPoint, QPoint> > pontos;
     std::map <QPushButton*, PortaLogica*> PortaLogicaDoBotao;
@@ -156,14 +155,12 @@ protected:
 
         painter.fillRect(0, 0, width, height, QColor(7, 13, 127));
 
+        //painter.fillRect(wAuxS, hAuxS, wAuxE, hAuxE, QColor(0,0,255));
 
+        painter.setPen(QColor(255,255,0));
 
-            //painter.fillRect(wAuxS, hAuxS, wAuxE, hAuxE, QColor(0,0,255));
-
-            painter.setPen(QColor(255,255,0));
-
-            for(unsigned long int i=0;i<pontos.size();i++)
-                painter.drawLine(pontos[i].first, pontos[i].second);
+        for(unsigned long int i=0;i<pontos.size();i++)
+            painter.drawLine(pontos[i].first, pontos[i].second);
 
     }
 

@@ -1200,7 +1200,11 @@ border-width: 0.5px;
 border-color: rgb(255, 255, 0);</string>
          </property>
          <property name="text">
-          <string>NIvel lógico 1</string>
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Imagens/Botao1.png</normaloff>../Imagens/Botao1.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -1348,7 +1352,11 @@ border-width: 0.5px;
 border-color: rgb(255, 255, 0);</string>
          </property>
          <property name="text">
-          <string>NIvel lógico 0</string>
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../Imagens/Botao0.png</normaloff>../Imagens/Botao0.png</iconset>
          </property>
          <property name="iconSize">
           <size>

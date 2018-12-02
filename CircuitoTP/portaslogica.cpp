@@ -92,11 +92,13 @@ Botao::Botao(){
 
     qtdEntradas = 0;
 }
+
 Botao::Botao(bool e){
     estado = e;
 
     qtdEntradas = 0;
 }
+
 bool Botao::Operacao(){
     return estado;
 }

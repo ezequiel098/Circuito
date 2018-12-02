@@ -5,8 +5,6 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
-    contador = 0;
-
     ui->setupUi(this);
 }
 

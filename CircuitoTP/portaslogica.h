@@ -3,6 +3,9 @@
 #include <map>
 #include <QPushButton>
 #include <iostream>
+#include <exception>
+
+using namespace std;
 
 class PortaLogica{
     protected:
@@ -22,12 +25,14 @@ class PortaLogica{
         }
 
         virtual bool Operacao(){return 0;}
+
         virtual bool entradaValida(){
             if(entrada1==NULL || entrada2==NULL)
                 return 0;
 
             return entrada1->entradaValida() && entrada2->entradaValida();
         }
+
         virtual void adicionarEntrada(PortaLogica* pl){}
         virtual void mudarEstado(){
             estado = !estado;

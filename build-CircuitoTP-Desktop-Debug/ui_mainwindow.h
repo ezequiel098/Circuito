@@ -358,6 +358,9 @@ public:
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
 "border-color: rgb(255, 255, 0);"));
+        QIcon icon3;
+        icon3.addFile(QString::fromUtf8("../Imagens/Botao1.png"), QSize(), QIcon::Normal, QIcon::Off);
+        botao1_botao->setIcon(icon3);
         botao1_botao->setIconSize(QSize(90, 30));
 
         verticalLayout->addWidget(botao1_botao);
@@ -384,6 +387,9 @@ public:
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
 "border-color: rgb(255, 255, 0);"));
+        QIcon icon4;
+        icon4.addFile(QString::fromUtf8("../Imagens/Botao0.png"), QSize(), QIcon::Normal, QIcon::Off);
+        botao0_botao->setIcon(icon4);
         botao0_botao->setIconSize(QSize(90, 30));
 
         verticalLayout->addWidget(botao0_botao);
@@ -465,9 +471,9 @@ public:
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
 "border-color: rgb(255, 255, 0);"));
-        QIcon icon3;
-        icon3.addFile(QString::fromUtf8("../Imagens/OuI.png"), QSize(), QIcon::Normal, QIcon::Off);
-        ou_botao->setIcon(icon3);
+        QIcon icon5;
+        icon5.addFile(QString::fromUtf8("../Imagens/OuI.png"), QSize(), QIcon::Normal, QIcon::Off);
+        ou_botao->setIcon(icon5);
         ou_botao->setIconSize(QSize(90, 30));
 
         gridLayout->addWidget(ou_botao, 1, 2, 1, 1);
@@ -494,9 +500,9 @@ public:
 "border-style:dotted;\n"
 "border-width: 0.5px;\n"
 "border-color: rgb(255, 255, 0);"));
-        QIcon icon4;
-        icon4.addFile(QString::fromUtf8("../Imagens/EI.png"), QSize(), QIcon::Normal, QIcon::Off);
-        e_botao->setIcon(icon4);
+        QIcon icon6;
+        icon6.addFile(QString::fromUtf8("../Imagens/EI.png"), QSize(), QIcon::Normal, QIcon::Off);
+        e_botao->setIcon(icon6);
         e_botao->setIconSize(QSize(90, 30));
 
         gridLayout->addWidget(e_botao, 1, 0, 1, 1);
@@ -2675,8 +2681,8 @@ public:
         LED_botao->setText(QString());
         ouExclusiv_Botao->setText(QString());
         label->setText(QApplication::translate("MainWindow", "Entradas e Saidas:", 0, QApplication::UnicodeUTF8));
-        botao1_botao->setText(QApplication::translate("MainWindow", "NIvel l\303\263gico 1", 0, QApplication::UnicodeUTF8));
-        botao0_botao->setText(QApplication::translate("MainWindow", "NIvel l\303\263gico 0", 0, QApplication::UnicodeUTF8));
+        botao1_botao->setText(QString());
+        botao0_botao->setText(QString());
         botaoMudar_botao->setText(QApplication::translate("MainWindow", "Mudar Nivel L\303\263gico", 0, QApplication::UnicodeUTF8));
         fioS_botao->setText(QApplication::translate("MainWindow", "Fio\n"
 "Saida P/ Entrada", 0, QApplication::UnicodeUTF8));
