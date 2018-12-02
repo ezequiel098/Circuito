@@ -120,6 +120,8 @@ public:
     QPushButton *pushButton_73;
     QPushButton *pushButton_7;
     QPushButton *pushButton_64;
+    QPushButton *pushButton;
+    QPushButton *pushButton_2;
     QFrame *line;
     QLabel *label_4;
     QLabel *label_5;
@@ -223,9 +225,11 @@ public:
         nao_botao->setFont(font1);
         nao_botao->setCursor(QCursor(Qt::PointingHandCursor));
         nao_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
-"border-style:dotted;\n"
+"border-style: solid;\n"
 "border-width: 0.5px;\n"
-"border-color: rgb(255, 255, 0);"));
+"border-color: rgb(255, 255, 0);\n"
+"border-radius:5px;\n"
+"height: 35px;"));
         QIcon icon;
         icon.addFile(QString::fromUtf8("../Imagens/NaoI.png"), QSize(), QIcon::Normal, QIcon::Off);
         nao_botao->setIcon(icon);
@@ -274,9 +278,11 @@ public:
         LED_botao->setFont(font1);
         LED_botao->setCursor(QCursor(Qt::PointingHandCursor));
         LED_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
-"border-style:dotted;\n"
+"border-style: solid;\n"
 "border-width: 0.5px;\n"
-"border-color: rgb(255, 255, 0);"));
+"border-color: rgb(255, 255, 0);\n"
+"border-radius:5px;\n"
+"height: 35px;"));
         QIcon icon1;
         icon1.addFile(QString::fromUtf8("../Imagens/LedInicial.png"), QSize(), QIcon::Normal, QIcon::Off);
         LED_botao->setIcon(icon1);
@@ -303,9 +309,11 @@ public:
         ouExclusiv_Botao->setFont(font1);
         ouExclusiv_Botao->setCursor(QCursor(Qt::PointingHandCursor));
         ouExclusiv_Botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
-"border-style:dotted;\n"
+"border-style: solid;\n"
 "border-width: 0.5px;\n"
-"border-color: rgb(255, 255, 0);"));
+"border-color: rgb(255, 255, 0);\n"
+"border-radius:5px;\n"
+"height: 35px;"));
         QIcon icon2;
         icon2.addFile(QString::fromUtf8("../Imagens/OuExclusivoI.png"), QSize(), QIcon::Normal, QIcon::Off);
         ouExclusiv_Botao->setIcon(icon2);
@@ -355,9 +363,7 @@ public:
         botao1_botao->setFont(font1);
         botao1_botao->setCursor(QCursor(Qt::PointingHandCursor));
         botao1_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
-"border-style:dotted;\n"
-"border-width: 0.5px;\n"
-"border-color: rgb(255, 255, 0);"));
+""));
         QIcon icon3;
         icon3.addFile(QString::fromUtf8("../Imagens/Botao1.png"), QSize(), QIcon::Normal, QIcon::Off);
         botao1_botao->setIcon(icon3);
@@ -384,9 +390,7 @@ public:
         botao0_botao->setFont(font1);
         botao0_botao->setCursor(QCursor(Qt::PointingHandCursor));
         botao0_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
-"border-style:dotted;\n"
-"border-width: 0.5px;\n"
-"border-color: rgb(255, 255, 0);"));
+""));
         QIcon icon4;
         icon4.addFile(QString::fromUtf8("../Imagens/Botao0.png"), QSize(), QIcon::Normal, QIcon::Off);
         botao0_botao->setIcon(icon4);
@@ -413,9 +417,11 @@ public:
         botaoMudar_botao->setFont(font1);
         botaoMudar_botao->setCursor(QCursor(Qt::PointingHandCursor));
         botaoMudar_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
-"border-style:dotted;\n"
+"border-style: solid;\n"
 "border-width: 0.5px;\n"
-"border-color: rgb(255, 255, 0);"));
+"border-color: rgb(255, 255, 0);\n"
+"border-radius:5px;\n"
+"height: 35px;"));
         botaoMudar_botao->setIconSize(QSize(90, 30));
 
         verticalLayout->addWidget(botaoMudar_botao);
@@ -442,9 +448,11 @@ public:
         fioS_botao->setFont(font1);
         fioS_botao->setCursor(QCursor(Qt::PointingHandCursor));
         fioS_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
-"border-style:dotted;\n"
+"border-style: solid;\n"
 "border-width: 0.5px;\n"
-"border-color: rgb(255, 255, 0);"));
+"border-color: rgb(255, 255, 0);\n"
+"border-radius:5px;\n"
+"height: 35px;"));
         fioS_botao->setIconSize(QSize(90, 30));
 
         gridLayout->addWidget(fioS_botao, 11, 0, 1, 3);
@@ -468,9 +476,11 @@ public:
         ou_botao->setFont(font1);
         ou_botao->setCursor(QCursor(Qt::PointingHandCursor));
         ou_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
-"border-style:dotted;\n"
+"border-style: solid;\n"
 "border-width: 0.5px;\n"
-"border-color: rgb(255, 255, 0);"));
+"border-color: rgb(255, 255, 0);\n"
+"border-radius:5px;\n"
+"height: 35px;"));
         QIcon icon5;
         icon5.addFile(QString::fromUtf8("../Imagens/OuI.png"), QSize(), QIcon::Normal, QIcon::Off);
         ou_botao->setIcon(icon5);
@@ -497,9 +507,11 @@ public:
         e_botao->setFont(font1);
         e_botao->setCursor(QCursor(Qt::PointingHandCursor));
         e_botao->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
-"border-style:dotted;\n"
+"border-style: solid;\n"
 "border-width: 0.5px;\n"
-"border-color: rgb(255, 255, 0);"));
+"border-color: rgb(255, 255, 0);\n"
+"border-radius:5px;\n"
+"height: 35px;"));
         QIcon icon6;
         icon6.addFile(QString::fromUtf8("../Imagens/EI.png"), QSize(), QIcon::Normal, QIcon::Off);
         e_botao->setIcon(icon6);
@@ -1369,8 +1381,7 @@ public:
         palette42.setBrush(QPalette::Disabled, QPalette::Window, brush2);
         pushButton_13->setPalette(palette42);
         pushButton_13->setFont(font2);
-        pushButton_13->setStyleSheet(QString::fromUtf8("background-color: rgba(255, 255, 255, 0);\n"
-"border-style:dotted;\n"
+        pushButton_13->setStyleSheet(QString::fromUtf8("border-style:dotted;\n"
 "border-width: 0.5px;\n"
 "border-color: rgb(255, 255, 0);\n"
 "height: 35px;"));
@@ -2554,6 +2565,35 @@ public:
 
         gridLayout_2->addWidget(pushButton_64, 5, 7, 1, 1);
 
+        pushButton = new QPushButton(gridLayoutWidget_2);
+        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        QFont font3;
+        font3.setFamily(QString::fromUtf8("Penguin"));
+        font3.setPointSize(12);
+        font3.setBold(false);
+        font3.setItalic(false);
+        font3.setWeight(9);
+        pushButton->setFont(font3);
+        pushButton->setCursor(QCursor(Qt::PointingHandCursor));
+        pushButton->setStyleSheet(QString::fromUtf8("background-color: rgb(252, 233, 79);\n"
+"border-radius:5px;\n"
+"height: 35px;\n"
+"color: rgb(7, 13, 127);\n"
+"font: 75 12pt \"Penguin\";"));
+
+        gridLayout_2->addWidget(pushButton, 9, 7, 1, 1);
+
+        pushButton_2 = new QPushButton(gridLayoutWidget_2);
+        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
+        pushButton_2->setFont(font3);
+        pushButton_2->setStyleSheet(QString::fromUtf8("background-color: rgb(252, 233, 79);\n"
+"border-radius:5px;\n"
+"height: 35px;\n"
+"color: rgb(7, 13, 127);\n"
+"font: 75 12pt \"Penguin\";"));
+
+        gridLayout_2->addWidget(pushButton_2, 9, 5, 1, 2);
+
         pushButton_58->raise();
         pushButton_15->raise();
         pushButton_50->raise();
@@ -2626,6 +2666,8 @@ public:
         pushButton_21->raise();
         pushButton_34->raise();
         pushButton_74->raise();
+        pushButton->raise();
+        pushButton_2->raise();
         line = new QFrame(centralWidget);
         line->setObjectName(QString::fromUtf8("line"));
         line->setGeometry(QRect(320, -10, 21, 661));
@@ -2761,6 +2803,8 @@ public:
         pushButton_73->setText(QString());
         pushButton_7->setText(QString());
         pushButton_64->setText(QString());
+        pushButton->setText(QApplication::translate("MainWindow", "Reiniciar", 0, QApplication::UnicodeUTF8));
+        pushButton_2->setText(QApplication::translate("MainWindow", "Captura de Tela", 0, QApplication::UnicodeUTF8));
         label_4->setText(QApplication::translate("MainWindow", "Campo de Constru\303\247\303\243o ", 0, QApplication::UnicodeUTF8));
         label_5->setText(QApplication::translate("MainWindow", "Campo de Escolhas", 0, QApplication::UnicodeUTF8));
     } // retranslateUi

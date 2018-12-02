@@ -5,6 +5,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+    contadorCapturas = 0;
     ui->setupUi(this);
 }
 
@@ -106,6 +107,7 @@ void MainWindow::alterarEstadoBotoes(QPushButton* botao){
                 cadastrarPortaLogica(botao, new class::E());
 
                 botao->setText("");
+                botao->setStyleSheet("border-style:none;");
                 botao->setIcon(QIcon("../Imagens/E.png"));
             }
         break;
@@ -113,6 +115,7 @@ void MainWindow::alterarEstadoBotoes(QPushButton* botao){
             if(!PortaLogicaJaCadastrada(botao)){
                 cadastrarPortaLogica(botao, new Ou());
 
+                botao->setStyleSheet("border-style:none;");
                 botao->setText("");
                 botao->setIcon(QIcon("../Imagens/Ou.png"));
             }
@@ -122,6 +125,7 @@ void MainWindow::alterarEstadoBotoes(QPushButton* botao){
                 cadastrarPortaLogica(botao, new OuExclusivo());
 
                 botao->setText("");
+                botao->setStyleSheet("border-style:none;");
                 botao->setIcon(QIcon("../Imagens/OuExclusivo.png"));
             }
         break;
@@ -130,6 +134,7 @@ void MainWindow::alterarEstadoBotoes(QPushButton* botao){
                 cadastrarPortaLogica(botao, new Nao());
 
                 botao->setText("");
+                botao->setStyleSheet("border-style:none;");
                 botao->setIcon(QIcon("../Imagens/Nao.png"));
             }
         break;
@@ -139,6 +144,7 @@ void MainWindow::alterarEstadoBotoes(QPushButton* botao){
                 adicionarPivo(botao);
 
                 botao->setText("");
+                botao->setStyleSheet("border-style:none;");
                 botao->setIcon(QIcon("../Imagens/LedInicial.png"));
             }
         break;
@@ -147,6 +153,7 @@ void MainWindow::alterarEstadoBotoes(QPushButton* botao){
                 cadastrarPortaLogica(botao, new Botao(false));
 
                 botao->setText("");
+                botao->setStyleSheet("border-style:none;");
                 botao->setIcon(QIcon("../Imagens/Botao0.png"));
             }
         break;
@@ -155,25 +162,29 @@ void MainWindow::alterarEstadoBotoes(QPushButton* botao){
                 cadastrarPortaLogica(botao, new Botao(true));
 
                 botao->setText("");
+                botao->setStyleSheet("border-style:none;");
                 botao->setIcon(QIcon("../Imagens/Botao1.png"));
             }
         break;
         case FIOE:
             if(PortaLogicaJaCadastrada(botao)){
                 try{
-                    verPortaLogica(botao)->adicionarEntrada(pLAux);
+                    PortaLogica* aux = verPortaLogica(botao);
+                    if(!(aux->taCheia())){
+                        aux->adicionarEntrada(pLAux);
 
-                    atualizarPivores();
+                        atualizarPivores();
 
-                    pAuxE = botao->geometry().center();
+                        pAuxE = botao->geometry().center();
 
-                    pAuxE.setX(pAuxE.x()+365);
-                    pAuxE.setY(pAuxE.y()+30);
+                        pAuxE.setX(pAuxE.x()+365);
+                        pAuxE.setY(pAuxE.y()+30);
 
-                    adicionarPonto(pAuxS, pAuxE);
-                    desenha();
+                        adicionarPonto(pAuxS, pAuxE);
+                        desenha();
 
-                    pLAux = NULL;
+                        pLAux = NULL;
+                    }
                 } catch(exception& e){
                     std::cout << "Error" << std::endl;
                 }
@@ -503,4 +514,22 @@ void MainWindow::on_pushButton_77_clicked(){
 
 void MainWindow::on_pushButton_78_clicked(){
     alterarEstadoBotoes(ui->pushButton_78);
+}
+
+void MainWindow::on_pushButton_clicked(){
+    qApp->quit();
+    QProcess::startDetached(qApp->arguments()[0], qApp->arguments());
+}
+
+void MainWindow::on_pushButton_2_clicked(){
+    QPixmap originalPixmap = QPixmap::grabWidget(this);
+
+
+    QString s = "captura" + QVariant(contadorCapturas).toString()+ ".png";
+
+    QFile file(s);
+    file.open(QIODevice::WriteOnly);
+    originalPixmap.save(&file, "PNG");
+
+    contadorCapturas++;
 }

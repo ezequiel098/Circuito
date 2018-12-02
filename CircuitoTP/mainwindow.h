@@ -13,6 +13,11 @@
 #include "portaslogica.h"
 #include <exception>
 #include <QBitmap>
+#include <QApplication>
+#include <QProcess>
+#include <QFile>
+#include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -134,7 +139,12 @@ private slots:
 
     void on_botaoMudar_botao_clicked();
 
+    void on_pushButton_clicked();
+
+    void on_pushButton_2_clicked();
+
 private:
+    int contadorCapturas;
     Escolhas escolha;
 
     PortaLogica* pLAux;

@@ -37,8 +37,13 @@ class PortaLogica{
         virtual void mudarEstado(){
             estado = !estado;
         }
+
         virtual int verEstado(){
             return estado;
+        }
+
+        virtual bool taCheia(){
+            return contador>=qtdEntradas;
         }
 };
 
