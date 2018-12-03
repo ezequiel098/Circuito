@@ -52,6 +52,7 @@ bool OuExclusivo::Operacao(){
 
     return 0;
 }
+
 void OuExclusivo::adicionarEntrada(PortaLogica* pL){
     if(contador==0){
         entrada1 = pL;
@@ -76,6 +77,7 @@ bool Nao::Operacao(){
 
     return 0;
 }
+
 void Nao::adicionarEntrada(PortaLogica* pL){
     if(contador==0){
         entrada1 = pL;

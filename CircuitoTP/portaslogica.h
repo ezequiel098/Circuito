@@ -43,7 +43,7 @@ class PortaLogica{
         }
 
         virtual bool taCheia(){
-            return contador>=qtdEntradas;
+                return contador>=qtdEntradas;
         }
 };
 

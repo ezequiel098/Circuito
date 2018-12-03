@@ -5,6 +5,7 @@ MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
+    escolha = DEFAULT;
     contadorCapturas = 0;
     ui->setupUi(this);
 }
