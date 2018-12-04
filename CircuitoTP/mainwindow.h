@@ -157,25 +157,9 @@ private:
     Ui::MainWindow *ui;
 
 protected:
-    void paintEvent(QPaintEvent*) {
-        QPainter painter(this);
-
-        int width = size().width() - 3;
-        int height = size().height() - 5;
-
-        painter.fillRect(0, 0, width, height, QColor(7, 13, 127));
-
-        //painter.fillRect(wAuxS, hAuxS, wAuxE, hAuxE, QColor(0,0,255));
-
-        painter.setPen(QColor(255,255,0));
-
-        for(unsigned long int i=0;i<pontos.size();i++)
-            painter.drawLine(pontos[i].first, pontos[i].second);
-
-    }
+    void paintEvent(QPaintEvent*);
 
     void desenha();
-
 };
 
 #endif // MAINWINDOW_H

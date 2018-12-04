@@ -1,5 +1,35 @@
 #include "portaslogica.h"
 
+PortaLogica::PortaLogica(){
+    estado = 2;
+    contador = 0;
+
+    entrada1 = NULL;
+    entrada2 = NULL;
+}
+bool PortaLogica::Operacao(){
+    return 0;
+}
+bool PortaLogica::entradaValida(){
+    if(entrada1==NULL || entrada2==NULL)
+        return 0;
+
+    return entrada1->entradaValida() && entrada2->entradaValida();
+}
+
+void PortaLogica::mudarEstado(){
+   estado = !estado;
+}
+
+int PortaLogica::verEstado(){
+    return estado;
+}
+
+bool PortaLogica::taCheia(){
+    return contador>=qtdEntradas;
+}
+
+
 E::E(){
     qtdEntradas = 2;
 }
@@ -52,7 +82,6 @@ bool OuExclusivo::Operacao(){
 
     return 0;
 }
-
 void OuExclusivo::adicionarEntrada(PortaLogica* pL){
     if(contador==0){
         entrada1 = pL;
@@ -77,7 +106,6 @@ bool Nao::Operacao(){
 
     return 0;
 }
-
 void Nao::adicionarEntrada(PortaLogica* pL){
     if(contador==0){
         entrada1 = pL;
@@ -85,6 +113,12 @@ void Nao::adicionarEntrada(PortaLogica* pL){
         contador++;
     }
 }
+bool Nao::entradaValida(){
+    if(entrada1==NULL)
+        return 0;
+    return entrada1->entradaValida();
+}
+
 
 Botao::Botao(){
     entrada1 = NULL;
@@ -122,4 +156,9 @@ void LED::adicionarEntrada(PortaLogica* pL){
 
         contador++;
     }
+}
+bool LED::entradaValida(){
+    if(entrada1==NULL)
+        return 0;
+    return entrada1->entradaValida();
 }
